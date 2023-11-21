@@ -1,0 +1,371 @@
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>以少胜多的基本逻辑 | 吴智炜</title>
+<meta name="description" content="吴智炜的随笔，关注心理学，经济学，哲学，数学，历史，政治，管理，投资，游戏设计和运营" />
+<meta name="keywords" content="吴智炜,心理学,经济学,数学,哲学,管理,投资,心智,思考,随笔,历史,政治">
+<link rel="shortcut icon" href="https://wzw.pub/favicon.ico?v=1">
+<link rel="stylesheet" href="/media/katex.min.css">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
+<link rel="stylesheet" href="/media/animate.min.css">
+
+<link rel="stylesheet" href="https://wzw.pub/styles/main.css">
+
+<script src="//instant.page/5.1.0" type="module" integrity="sha384-by67kQnR+pyfy8yWP4kPO12fHKRLHZPfEsiSXR8u2IKcTdxD805MGUXBzVPnkLHw"></script>
+<script type="text/javascript">
+  (function(c,l,a,r,i,t,y){
+      c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+      t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+      y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+  })(window, document, "clarity", "script", "jtitdcehs8");
+</script>
+
+
+    <!-- <script src='/media/Valine.min.js'></script> -->
+  </head>
+  <body>
+    <div id="app" class="main px-4 flex flex-col lg:flex-row">
+      <div id="sidebar" class="sidebar-wrapper lg:static lg:w-1/4">
+  <div class="lg:sticky top-0">
+    <div class="sidebar-content">
+      <div class="flex lg:block p-4 lg:px-0 items-center fixed lg:static lg:block top-0 right-0 left-0 bg-white z-50">
+        <!-- <i class="ri-menu-2-line lg:mt-4 text-2xl cursor-pointer animated fadeIn" onclick="openMenu()"></i> -->
+        
+        <a href="https://wzw.pub">
+        <h1 class="animated fadeInLeft lg:text-4xl font-extrabold lg:mt-8 mt-0 text-xl" style="animation-delay: 0.2s">吴智炜</h1>
+        </a>
+        <div class="top1block" style="margin-left: auto;">
+          
+            
+              <a href="https://www.douban.com/people/timcs/" _blank class="mr-4 text-xl text-gray-400 font-light hover:text-gray-900">
+                <i class="ri-douban-line"></i>
+              </a>
+            
+          
+            
+              <a href="/about"  class="mr-4 text-xl text-gray-400 font-light hover:text-gray-900">
+                <i class="ri-profile-line"></i>
+              </a>
+            
+          
+            
+              <a href="/archives"  class="mr-4 text-xl text-gray-400 font-light hover:text-gray-900">
+                <i class="ri-archive-line"></i>
+              </a>
+            
+          
+            
+              <a href="/atom.xml" _blank class="mr-4 text-xl text-gray-400 font-light hover:text-gray-900">
+                <i class="ri-rss-line"></i>
+              </a>
+            
+          
+        </div>
+      </div>
+      
+        <div class="animated fadeInLeft" style="animation-delay: 0.4s">
+          <p class="my-4 text-gray-600 font-light hidden lg:block">
+            文章目录
+          </p>
+          <div class="toc-container hidden lg:block">
+            <ul class="markdownIt-TOC">
+<li>
+<ul>
+<li><a href="#%E5%B9%82%E5%BE%8B%E5%88%86%E5%B8%83">幂律分布</a></li>
+<li><a href="#%E4%BB%A5%E5%B0%91%E8%83%9C%E5%A4%9A">以少胜多</a></li>
+<li><a href="#%E4%B8%8D%E6%AD%A2%E6%88%98%E4%BA%89">不止战争</a></li>
+</ul>
+</li>
+</ul>
+
+          </div>
+        </div>
+      
+    </div>
+  </div>
+</div>
+
+<div class="menu-container">
+  <i class="ri-arrow-left-line text-2xl cursor-pointer animated fadeIn close-menu-btn" onclick="closeMenu()"></i>
+  <div>
+    
+      
+        <a href="/" class="menu" style="animation-delay: 0s">
+          首页
+        </a>
+      
+    
+      
+        <a href="/about" class="menu" style="animation-delay: 0.2s">
+          关于
+        </a>
+      
+    
+      
+        <a href="/archives" class="menu" style="animation-delay: 0.4s">
+          归档
+        </a>
+      
+    
+  </div>
+  <div class="site-footer">
+    <div class="py-4 text-gray-700">© 2020 - <script>document.write(new Date().getFullYear())</script>
+Host by <a href="/about" class="rss" target="_blank">Tim</a></div>
+    <a class="rss" href="https://wzw.pub/atom.xml" target="_blank">RSS</a>
+  </div>
+</div>
+<div class="mask" onclick="closeMenu()">
+</div>
+      <div class="content-wrapper py-32 lg:p-8 lg:w-3/4 post-detail animated fadeIn">
+        <h1 class="text-3xl font-bold lg:mt-16">以少胜多的基本逻辑</h1>
+        
+        <div class="text-sm text-gray-700 lg:my-8">
+          
+            2020-04-25
+          
+        </div>
+        
+        
+        <div class="post-content yue">
+          <p>几天前，天立跟我说他在看「毛泽东兵法精要」这本书。我跟他说兵法的要义其实非常简单，有一种以少胜多的基本逻辑。</p>
+<!-- more -->
+<p>基本逻辑是一种底层的思考模型，就是「道」，而实践中的具体策略则是「术」。</p>
+<p>在理解「道」之前，掌握太多「术」是不好的。因为「术」是人在不同的环境下总结出来的应对策略，它们带有太多偶然性；而「道」是一种规律，它更加普遍，也更加长久。任何「术」的出发点应该基于正确的「道」，然后随机应变，这样我们才不会走偏。</p>
+<p>「道」应该越精简越好，这样才没有杂质，也方便记忆，理解和扩展。</p>
+<p>什么是以少胜多的「道」呢？</p>
+<p>很简单，就是<strong>以多胜少</strong>。</p>
+<p>有人会问，这不是自相矛盾吗？稍安勿躁，让我用这篇文章来解释。</p>
+<h2 id="幂律分布">幂律分布</h2>
+<p>幂律分布是一种统计上的概率分布，在现实世界中存在着很多幂律分布的影子。</p>
+<figure data-type="image" tabindex="1"><img src="https://wzw.pub/post-images/1624190061702.png" alt="" loading="lazy"></figure>
+<p>比如世界上20%的人拥有80%的财富，而剩下的80%则只拥有20%的财富。</p>
+<p>这就是著名的<strong>二八定律</strong>：</p>
+<blockquote>
+<p>在任何特定群体中，重要的因子通常只占少数，而不重要的因子则占多数，因此只要能控制具有重要性的少数因子即能控制全局。</p>
+</blockquote>
+<p>做过开发的人都明白，通常影响性能的代码模块很少，只要去优化少数几个模块，甚至只改动一两行代码，就能获得100%以上的性能提升。</p>
+<p>拿我们游戏来举例，大额付费玩家（大R）的付费比其余所有玩家加起来还多，然而大R数量占总玩家数量的比重不到1%。</p>
+<p>汉字有几万字，但我们每天日常使用到最多的都是「的、是、了、我」等常见字，诸如「巗、巘、巙、巚」等生僻字你可能一辈子都见不到一次。</p>
+<p>幂律分布告诉我们：真理往往掌握在少数人手里。</p>
+<p>做对一件关键的事情，比做对一百件无关紧要的事情要更有价值，而且关键事情的发生往往是具有决定性意义的。</p>
+<h2 id="以少胜多">以少胜多</h2>
+<p>有人会说，上面的道理我都懂，可这跟以少胜多有什么关系呢？</p>
+<p>让我们回到开头的问题：如何以少胜多？</p>
+<p>答：以多胜少。</p>
+<p>我都少了，还哪来的以多胜少呢？</p>
+<p>答：<strong>在我们弱小，劣势的时候，我们要将资源集中起来，劲往一块使。针对(敌人)薄弱的关键点发起集火，从而形成在关键点上以多打少的局部优势</strong>。</p>
+<p>简言之，就是<strong>集中力量去做重要的事情</strong>，建立起关键点上的局部优势。再简单一点，就是<strong>聚焦</strong>。</p>
+<p>毛主席曾说过：伤其十指，不如断其一指。意思就是要集中火力去彻底歼灭敌人一个师，而不是四面出击，谁都打一下。</p>
+<p>伤其十指，假以时日，十指还能恢复战斗力。然而断其一指，则永不能复生，这就造成了彻底的杀伤。</p>
+<p>孟良崮战役就是一个典型案例。</p>
+<p>1947年，解放军还处于战略防御的阶段，论兵力和装备都不及国军。国军整编第七十四师是国军的王牌中的王牌，全师美械装备，中将师长张灵甫还是一个常胜将军。</p>
+<p>3月，国军出动45万兵力对山东解放区发动重点攻击，其中就有张灵甫的王牌74师。守卫山东的华野总计27万兵力，在兵力和装备上都处于劣势。</p>
+<p>起初战局的进展对华野不利，这也让国军司令部产生了华野疲软的错觉，于是下令74师快速挺进，占领重要据点。</p>
+<p>粟裕立刻察觉到74师的挺进是孤军深入，于是连夜电令各纵队放弃之前作战任务。安排四个纵队外围切断敌军援助，五个纵队对74师驻地孟良崮发动狂风骤雨般的围攻。</p>
+<p>于是，一个晚上，一半以上的华野主力便投入了对74师的围歼。在孟良崮这个局部战场，瞬间形成了极大局部优势。最后，历经3天3夜的激战，74师被全歼，师长张灵甫阵亡。</p>
+<p>下图很直观的展示了孟良崮的被围攻（创造局部优势）过程，红色为解放军。</p>
+<figure data-type="image" tabindex="2"><img src="https://wzw.pub/post-images/1624190070825.png" alt="" loading="lazy"></figure>
+<p>王牌师的全军覆灭，对国军的心理造成了极大的打击，却空前的提振了解放军的士气。此战过后，全国的战争形势也发生扭转，解放军逐渐从战略防御转向战略进攻，为后来的全面胜利奠定了基础。</p>
+<p>官渡之战也是一样。袁绍兵力是曹操的五倍，然而曹操听从许攸建议，连夜集中优势兵力偷袭了袁绍的粮仓乌巢，使得袁绍十万大军失去了粮食，军中大乱，溃败而逃。</p>
+<p>赢得了官渡之战后，曹操也奠定了北方统一的基础，后续灭三袁，征乌丸便成了常规操作。</p>
+<p>集中优势兵力去攻击敌人的薄弱点和关键点，就能够形成局部优势，而关键点的胜利则又会由于二八定律转化为全局的胜利。</p>
+<p>这便是以少胜多，甚至求胜的一种基本逻辑。</p>
+<p>现实世界的阴谋往往是不得已而为之，而这种<strong>积极捕捉局部优势</strong>的思考，却不依赖于太多阴谋诡计。把各个局部优势累积，通过一个关键点的局部优势放大，就能转化为全局的胜势。</p>
+<h2 id="不止战争">不止战争</h2>
+<p>在我喜爱的游戏DOTA2中也一样。如果我方处于劣势时，这时候不应该跟对方硬碰硬，来一场5v5的团战。而是应该五人开雾（隐身），找到落单的一两个敌方英雄，形成局部多打少，从而击杀敌方落单英雄，制造人数优势。然后顺理成章的推线拿塔，把劣势扳回。</p>
+<p>田忌赛马也是一样，齐王的每个等级的马都要比田忌的好，看似田忌处于绝对劣势，无法获胜。孙膑却让田忌故意求败，让田忌的下等马去对阵齐王的上等马；而用上等马对阵齐王的中等马，中等马对阵齐王的下等马，形成两次局部优势，2比1，从而获得整体的胜利。</p>
+<p>在资源有限的情况下，如何突围？聚焦于自己的核心要素，砍掉或者忽略掉其他不重要的地方。</p>
+<p>我在读「大败局2」和「史玉柱自述」时都读到了史玉柱和巨人的故事。巨人在做巨人汉卡获得空前成功后，心态膨胀，一下子就把业务扩张到了十几个行业。最后资金周转不过来，层层雪崩，资金链断裂，不得不欠下巨额债务，最后还是靠着脑白金的成功才还清了债务。</p>
+<p>最后史玉柱总结道：<strong>一个人的时间和精力是有限的，只能聚焦于一件事情</strong>。</p>
+<p>乔布斯也说过类似的话。1997年乔布斯重返苹果时，苹果已在破产边缘。乔布斯回归后，砍掉了70%的业务，聚焦于用户体验。十年后，苹果推出iPhone，征服了全世界的消费者，如今市值万亿美元。</p>
+<p>对于人这个个体来说也是一样，门门都是70分的人是平庸的；而一个一门100分，其余60分的人才则能够显露出来，博得别人的关注。</p>
+<p>最后总结，以少胜多的基本逻辑便是<strong>搜寻局部优势</strong>，<strong>聚焦于关键点</strong>，在关键点上形成局部优势，通过局部的优势转化为全局的胜势。</p>
+
+        </div>
+
+        
+          <div class="tag-container">
+            
+              <a href="https://wzw.pub/tag/x6sx5J0ir/" class="tag">
+                局部优势
+              </a>
+            
+              <a href="https://wzw.pub/tag/Hldzf7J4JL/" class="tag">
+                聚焦
+              </a>
+            
+              <a href="https://wzw.pub/tag/s3mRwG9MfY/" class="tag">
+                二八定律
+              </a>
+            
+              <a href="https://wzw.pub/tag/aRLeFrN2g/" class="tag">
+                思考
+              </a>
+            
+              <a href="https://wzw.pub/tag/mfeoCCRTls/" class="tag">
+                以少胜多
+              </a>
+            
+              <a href="https://wzw.pub/tag/nweb4Rnufr/" class="tag">
+                兵法
+              </a>
+            
+          </div>
+        
+
+        <figure data-type="image" tabindex="1">
+          <img src="/post-images/1624146622127.png" alt="" loading="lazy">     
+        </figure>
+
+
+        <div class="flex justify-between py-8">
+          
+            <div class="prev-post">
+              <a href="https://wzw.pub/how-to-solve-problem/">
+                <h3 class="post-title">
+                  <i class="ri-arrow-left-line"></i>
+                  如何提升解决问题的能力
+                </h3>
+              </a>
+            </div>
+          
+
+          
+            <div class="next-post">
+              <a href="https://wzw.pub/chaos-entropy-life-and-death/">
+                <h3 class="post-title">
+                  一坨大便的启示
+                  <i class="ri-arrow-right-line"></i>
+                </h3>
+              </a>
+            </div>
+          
+        </div>
+
+        
+
+        <!-- 
+        <div id="vcomments"></div>
+        <script>
+            new Valine({
+                el: '#vcomments',
+                lang: 'zh-cn',
+                placeholder: '写下你的评论吧……',
+                max_nest: 3,
+                page_size: 5,
+                appId: 'hoEIjNWk6MKXf9NQe8b3K3mG-MdYXbMMI',
+                appKey: 'YO6weOeJtEEbNusByHW9cOWH',
+                master: '6c6323112bd931d166eebac2383154db'
+            })
+        </script>
+         -->
+
+      </div>
+    </div>
+
+    <script src="https://wzw.pub/media/prism.js"></script>  
+<script>
+
+Prism.highlightAll()
+let mainNavLinks = document.querySelectorAll(".markdownIt-TOC a");
+
+// This should probably be throttled.
+// Especially because it triggers during smooth scrolling.
+// https://lodash.com/docs/4.17.10#throttle
+// You could do like...
+// window.addEventListener("scroll", () => {
+//    _.throttle(doThatStuff, 100);
+// });
+// Only not doing it here to keep this Pen dependency-free.
+
+window.addEventListener("scroll", event => {
+  let fromTop = window.scrollY;
+
+  mainNavLinks.forEach((link, index) => {
+    let section = document.getElementById(decodeURI(link.hash).substring(1));
+    let nextSection = null
+    if (mainNavLinks[index + 1]) {
+      nextSection = document.getElementById(decodeURI(mainNavLinks[index + 1].hash).substring(1));
+    }
+    if (section.offsetTop <= fromTop) {
+      if (nextSection) {
+        if (nextSection.offsetTop > fromTop) {
+          link.classList.add("current");
+        } else {
+          link.classList.remove("current");    
+        }
+      } else {
+        link.classList.add("current");
+      }
+    } else {
+      link.classList.remove("current");
+    }
+  });
+});
+
+
+document.addEventListener("DOMContentLoaded", function() {
+  var lazyImages = [].slice.call(document.querySelectorAll(".post-feature-image.lazy"));
+
+  if ("IntersectionObserver" in window) {
+    let lazyImageObserver = new IntersectionObserver(function(entries, observer) {
+      entries.forEach(function(entry) {
+        if (entry.isIntersecting) {
+          let lazyImage = entry.target
+          lazyImage.style.backgroundImage = `url(${lazyImage.dataset.bg})`
+          lazyImage.classList.remove("lazy")
+          lazyImageObserver.unobserve(lazyImage)
+        }
+      });
+    });
+
+    lazyImages.forEach(function(lazyImage) {
+      lazyImageObserver.observe(lazyImage)
+    })
+  } else {
+    // Possibly fall back to a more compatible method here
+  }
+});
+
+const menuContainer = document.querySelector('.menu-container')
+const menus = document.querySelectorAll('.menu-container .menu')
+const mask = document.querySelector('.mask')
+const contentWrapper = document.querySelector('.content-wrapper')
+const latestArticle = document.querySelector('.latest-article')
+const readMore = document.querySelector('.read-more')
+const indexPage = document.querySelector('.index-page')
+
+const isHome = location.pathname === '/'
+if (latestArticle) {
+  latestArticle.style.display = isHome ? 'block' : 'none'
+  readMore.style.display = isHome ? 'block' : 'none'
+  indexPage.style.display = isHome ? 'none' : 'block'
+}
+
+const openMenu = () => {
+  menuContainer.classList.add('open')
+  menus.forEach(menu => {
+    menu.classList.add('animated', 'fadeInLeft')
+  })
+  mask.classList.add('open')
+  contentWrapper.classList.add('is-second')
+}
+
+const closeMenu = () => {
+  menuContainer.classList.remove('open')
+  menus.forEach(menu => {
+    menu.classList.remove('animated', 'fadeInLeft')
+  })
+  mask.classList.remove('open')
+  contentWrapper.classList.remove('is-second')
+}
+</script>
+  
+     <div class="site-info">
+      <div class="py-4 text-gray-700">© 2020 - <script>document.write(new Date().getFullYear())</script>
+Host by <a href="/about" class="rss" target="_blank">Tim</a> | <a class="rss" href="https://wzw.pub/atom.xml" target="_blank">订阅</a> </div>
+    </div>
+  </body>
+</html>

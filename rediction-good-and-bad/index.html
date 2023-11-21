@@ -1,0 +1,419 @@
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>预测，好与坏 | 吴智炜</title>
+<meta name="description" content="吴智炜的随笔，关注心理学，经济学，哲学，数学，历史，政治，管理，投资，游戏设计和运营" />
+<meta name="keywords" content="吴智炜,心理学,经济学,数学,哲学,管理,投资,心智,思考,随笔,历史,政治">
+<link rel="shortcut icon" href="https://wzw.pub/favicon.ico?v=1">
+<link rel="stylesheet" href="/media/katex.min.css">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
+<link rel="stylesheet" href="/media/animate.min.css">
+
+<link rel="stylesheet" href="https://wzw.pub/styles/main.css">
+
+<script src="//instant.page/5.1.0" type="module" integrity="sha384-by67kQnR+pyfy8yWP4kPO12fHKRLHZPfEsiSXR8u2IKcTdxD805MGUXBzVPnkLHw"></script>
+<script type="text/javascript">
+  (function(c,l,a,r,i,t,y){
+      c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+      t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+      y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+  })(window, document, "clarity", "script", "jtitdcehs8");
+</script>
+
+
+    <!-- <script src='/media/Valine.min.js'></script> -->
+  </head>
+  <body>
+    <div id="app" class="main px-4 flex flex-col lg:flex-row">
+      <div id="sidebar" class="sidebar-wrapper lg:static lg:w-1/4">
+  <div class="lg:sticky top-0">
+    <div class="sidebar-content">
+      <div class="flex lg:block p-4 lg:px-0 items-center fixed lg:static lg:block top-0 right-0 left-0 bg-white z-50">
+        <!-- <i class="ri-menu-2-line lg:mt-4 text-2xl cursor-pointer animated fadeIn" onclick="openMenu()"></i> -->
+        
+        <a href="https://wzw.pub">
+        <h1 class="animated fadeInLeft lg:text-4xl font-extrabold lg:mt-8 mt-0 text-xl" style="animation-delay: 0.2s">吴智炜</h1>
+        </a>
+        <div class="top1block" style="margin-left: auto;">
+          
+            
+              <a href="https://www.douban.com/people/timcs/" _blank class="mr-4 text-xl text-gray-400 font-light hover:text-gray-900">
+                <i class="ri-douban-line"></i>
+              </a>
+            
+          
+            
+              <a href="/about"  class="mr-4 text-xl text-gray-400 font-light hover:text-gray-900">
+                <i class="ri-profile-line"></i>
+              </a>
+            
+          
+            
+              <a href="/archives"  class="mr-4 text-xl text-gray-400 font-light hover:text-gray-900">
+                <i class="ri-archive-line"></i>
+              </a>
+            
+          
+            
+              <a href="/atom.xml" _blank class="mr-4 text-xl text-gray-400 font-light hover:text-gray-900">
+                <i class="ri-rss-line"></i>
+              </a>
+            
+          
+        </div>
+      </div>
+      
+        <div class="animated fadeInLeft" style="animation-delay: 0.4s">
+          <p class="my-4 text-gray-600 font-light hidden lg:block">
+            文章目录
+          </p>
+          <div class="toc-container hidden lg:block">
+            <ul class="markdownIt-TOC">
+<li>
+<ul>
+<li><a href="#cpu">CPU</a></li>
+<li><a href="#%E9%9A%8F%E6%9C%BA">随机</a></li>
+<li><a href="#%E4%BA%BA">人</a></li>
+<li><a href="#%E4%B8%8D%E5%AF%B9%E7%A7%B0%E6%80%A7%E5%92%8C%E4%BF%AE%E6%AD%A3">不对称性和修正</a></li>
+</ul>
+</li>
+</ul>
+
+          </div>
+        </div>
+      
+    </div>
+  </div>
+</div>
+
+<div class="menu-container">
+  <i class="ri-arrow-left-line text-2xl cursor-pointer animated fadeIn close-menu-btn" onclick="closeMenu()"></i>
+  <div>
+    
+      
+        <a href="/" class="menu" style="animation-delay: 0s">
+          首页
+        </a>
+      
+    
+      
+        <a href="/about" class="menu" style="animation-delay: 0.2s">
+          关于
+        </a>
+      
+    
+      
+        <a href="/archives" class="menu" style="animation-delay: 0.4s">
+          归档
+        </a>
+      
+    
+  </div>
+  <div class="site-footer">
+    <div class="py-4 text-gray-700">© 2020 - <script>document.write(new Date().getFullYear())</script>
+Host by <a href="/about" class="rss" target="_blank">Tim</a></div>
+    <a class="rss" href="https://wzw.pub/atom.xml" target="_blank">RSS</a>
+  </div>
+</div>
+<div class="mask" onclick="closeMenu()">
+</div>
+      <div class="content-wrapper py-32 lg:p-8 lg:w-3/4 post-detail animated fadeIn">
+        <h1 class="text-3xl font-bold lg:mt-16">预测，好与坏</h1>
+        
+        <div class="text-sm text-gray-700 lg:my-8">
+          
+            2020-10-01
+          
+        </div>
+        
+        
+        <div class="post-content yue">
+          <p>最近在学习乐理，在田立推荐的「好和弦」频道上看到一讲：为什么高手视谱这么快。看完后，我深感共鸣，便有此篇。</p>
+<!-- more -->
+<p>让我们先玩个小游戏吧。请你用最快的速度分别念出下面三句话：</p>
+<blockquote>
+<ul>
+<li>一二三四五六七八九十</li>
+<li>手抓饼口味冰淇淋好赞</li>
+<li>摆痴拟岛第享说蛇抹阿</li>
+</ul>
+</blockquote>
+<p>都是十个常见字，为什么三个句子越读越慢呢？</p>
+<p>因为第一句的模式很简单，只需要瞄一眼，就能预测出后面的字。</p>
+<p>第二句是几个常用词的组合，读到<code>手抓</code>你大致能想到后面是<code>饼</code>，读到<code>冰淇</code>则一定跟着<code>淋</code>；而第三句每个字你都认识，但彼此没有关联，你无法找到熟悉的模式，所以读起来最慢。</p>
+<p>为什么高手视谱很快？因为高手瞄一眼谱子，就能大致预测出后面的音阶组合，跟我们看第二句话这么简单。入门者看谱就跟读第三句话一样，每个字都认识，但是念起来就是很慢。而我这样的初学者就跟文盲一样，甚至连字都不认识。</p>
+<h2 id="cpu">CPU</h2>
+<p>可以发现，如果能预测后面会发生什么，我们便能很快做出反应。同样的道理，不禁让我联想到 CPU 的分支预测技术。</p>
+<p>CPU 的指令是一条流水线，流水线的不同阶段大致可简化如下：</p>
+<ol>
+<li>排队</li>
+<li>从地址读取指令</li>
+<li>将指令解码</li>
+<li>执行指令</li>
+<li>把结果写回</li>
+</ol>
+<p>对于流水线来说，最好的情况是它的每一个阶段都在工作；这就好比工厂生产线上的每个工人都在干活一样。</p>
+<p>这样，在相同的时刻，CPU 就可以同时处理不同指令的不同阶段。这也是流水线能提高生产效率的一个重要原因。</p>
+<p>然而，有一些指令，只有在执行后，才能确定下一条指令的地址。也就是说下一条指令的读取操作要等上一条指令执行操作完毕后才能确定。</p>
+<p>比如代码中最常见的<code>if</code>语句。只有当<code>if</code>判断执行完毕后，才知道下一步是执行哪条指令。</p>
+<p>难道遇到<code>if</code>指令就要让后面的指令继续排队，使得流水线上的<code>读取</code>和<code>解码</code>步骤空闲吗？</p>
+<p>当然不！那 CPU 应该怎么做？</p>
+<p>预测下一条指令的地址。</p>
+<p>如果预测成功，一切就当无事发生过，流水线依然跑得满满当当，性能满分。</p>
+<p>如果预测失败呢？因为后续指令的地址错误，则意味着这条错误指令之前做的<code>读取</code>和<code>解码</code>白白浪费了。此时需要把它后面的所有指令全部退回去重新排队，然后从正确的地址上取指令再解码，性能负分。</p>
+<p>有人会问，这预测不就是玄学吗？然而，现代 CPU 的预测成功率已经可以达到 99.4%，往往都会远高于 50%。</p>
+<figure data-type="image" tabindex="1"><img src="https://wzw.pub/post-images/1624113925752.png" alt="cpu在不同程序" loading="lazy"></figure>
+<p>分支预测技术已经成为了现代 CPU 的标配，先进的预测技术能给指令的处理速度带来巨大的提升。</p>
+<h2 id="随机">随机</h2>
+<p>为什么 CPU 的预测成功率会大幅高于 50%呢？</p>
+<p>因为代码中出现的判断往往会被执行很多次，也就是说一个一模一样的判断会被执行成千上万次。这样 CPU 就可以根据历史来进行学习，从而找到规律，使得后面的预测越来越准。</p>
+<pre><code>设列表为十个数字：0,1,2,3,4,5,6,7,8,9
+从头到尾，取出列表中的每一个数字n
+如果 n &lt; 5则
+  执行指令A
+否则
+  执行指令B
+
+那么指令的执行顺序如下：
+AAAAABBBBB
+</code></pre>
+<p>假设预测器根据上一次的结果来预测下一次，默认第一次预测结果为 A。</p>
+<p>那么预测器的结果将为：<code>对对对对对错对对对对</code>，成功率为 90%！</p>
+<p>如果数字是随机的呢？</p>
+<p>注意：随机并不意味着是<code>ABABABBABA</code>这样犬牙交错的结构。这样的结构暗含着某种模式，比如<code>AB</code>重复或者<code>BA</code>重复。人工去构造一个随机序列很难，因为人的创造天生会遵循某种既定模式，不信你可以尝试去构造一组随机序列。</p>
+<pre><code>这些数字是我在random.org生成出来的真随机序列
+设列表为十个数字：1,6,2,7,7,6,0,3,2,2
+从头到尾，取出列表中的每一个数字n
+如果 n &lt; 5则
+  执行指令A
+否则
+  执行指令B
+
+那么指令的执行顺序如下：
+ABABBBAAAA
+</code></pre>
+<p>那么预测器的结果为：<code>对错错错对对错对对对</code>，正确率为 60%。</p>
+<p>当然我们更容易相信，如果判断结果是完全随机的，经过无数次试验，正确率最后应该逼近 50%。</p>
+<p>我想，到这里可以得出几个结论：</p>
+<ol>
+<li>对于程序员来说，在<strong>有序队列</strong>中处理跳转会比在随机队列中处理跳转更快，因为这有助于提高 CPU 的预测成功率</li>
+<li>对于任何人来说，对完全随机的事件做预测，成功的概率跟掷骰子差不多</li>
+<li>预测成功有助于提高效率，而预测失败则会带来反作用</li>
+</ol>
+<h2 id="人">人</h2>
+<p>每个人都需要去做各种各样的预测，然后根据预测去做出决定。</p>
+<p>出门是否会下雨，决定是否带伞。</p>
+<p>手机振动了是不是有消息，决定要不要拿起来看。</p>
+<p>我能不能反杀，决定是跑还是战。</p>
+<p>那个女孩喜不喜欢我，决定是否表白。</p>
+<p>在这个看脸的社会，「颜值即正义」就是一种简单的预判：长得好看的人就是好人。</p>
+<p>有一次和朋友们一起玩剧本杀，我扮演一个类似侦探的角色，要带领大家找出凶手。</p>
+<p>进行过半，其他人均被我排除，就只剩下 A 和 B。最后在犹豫中，我选择 B 作为凶手。其中很大一个原因是 A 长得阳光帅气，不大可能会撒谎。然而，我却判断失误，A 隐藏了一个重要的信息，而我却一直对此视而不见。</p>
+<p>很明显，这里我犯了一个以貌取人的错误。而这个错误则来自于一个著名的心理学效应：<strong>晕轮效应</strong>。</p>
+<p>即，人们根据对他人的初步印象，推断出这个人的其他特质。比如说一个人长得好看，那么 ta 的其他也会被认为是好的；一个人如果是黑人，那么 ta 就会被认为是脏的等等。</p>
+<p>这其实就是一种以偏概全的预判，通过局部印象来推导整体印象，往往会过分夸大一个人，有时候则会过分贬低一个人。</p>
+<p>诚然，这种预判是人类为了节约脑力，减少判断的一个自我保护措施，就跟贴标签一样，简单快速便能得出结论。然而这样简单的判断却有可能会阻碍进一步挖掘真相的努力，从而有可能会使自己面临到危险的处境中。</p>
+<p>另一方面，人们往往对自己的预测能力颇为自信。</p>
+<p>比如人生三大错觉。</p>
+<p>比如股市中的各种散户们。我们都知道股市中有一句话叫「十个人炒股九个人亏」，那为什么还有那么多人去炒股呢？</p>
+<p>很多人盲目跟风，以为能跟着庄家赚一笔。殊不知庄家可能知道内幕消息，而且拥有巨量资金可以左右局势。而散户因为缺少信息，面对的是一个近乎随机波动的指数，那么预测成功的概率就跟骰筛子差不多。再加上散户纪律不强，那么亏钱则倒是大概率的事情了。</p>
+<h2 id="不对称性和修正">不对称性和修正</h2>
+<p>其实很多时候预测失败了也没什么大不了的。</p>
+<p>比如前面我只是输了一局游戏而已，对我来说影响不大；又比如没有带伞被雨淋了，回家洗个热水澡，换身干净衣服就行了。</p>
+<p>预测的成败之间存在着不对称性，即预测成功和预测失败的结果往往可能是不等价的。</p>
+<p>光脚的不怕穿鞋的，秀才造反十年不成。就是因为相对于秀才来说，吃不饱饭的底层人民，没有那么多顾忌。即便失败了，情况也不过是换种死法而已；而如果赌对了，则是大赚特赚。</p>
+<p>对于统帅来说，一个决策失误就可能导致战局逆转。所以预测失败的代价很高，有时候往往是不能承受的代价。</p>
+<p>那么，我们要怎样去修正预测结果，提高预测成功率呢？</p>
+<p>首先，很多时候预测不可避免，但是大多数时候预测失败都无伤大雅。不妨让每一次预测当做一次练习，通过练习来逐步修正自己的认知，不在同一个地方跌倒两次。</p>
+<p>CPU 的分支预测器只有在指令执行时才能判断预测是否成功，执行可以类比为一种实践。只有通过不断的做事情，根据反馈来调整，才有可能逐步提高预测的成功率。</p>
+<p>其次，我们要尽量避免在不熟悉的领域做重要预测。这样很可能会进入到一个对于我们来说，即便是有规律的信息也都是随机噪音的境地，而我们能否成功的概率也就只能完全取决于运气。</p>
+<p>最后，如果我们必须要做出决策，而且这个决策失败的代价很高。那么我们就需要回顾历史，需要去了解事物背后的方方面面。通过搜集更多的信息和线索，来缩小决策的空间，在更少的选项里选择，做对的概率也许就会更大一些。</p>
+
+        </div>
+
+        
+          <div class="tag-container">
+            
+              <a href="https://wzw.pub/tag/fT32fawKg/" class="tag">
+                晕轮效应
+              </a>
+            
+              <a href="https://wzw.pub/tag/s57-VAmp1z/" class="tag">
+                分支预测
+              </a>
+            
+              <a href="https://wzw.pub/tag/8VNq3Ygx3r/" class="tag">
+                心理学
+              </a>
+            
+              <a href="https://wzw.pub/tag/cLk5r-YZP/" class="tag">
+                预测
+              </a>
+            
+              <a href="https://wzw.pub/tag/k-eSsk1Cwa/" class="tag">
+                非对称性
+              </a>
+            
+              <a href="https://wzw.pub/tag/_SisdYPmUw/" class="tag">
+                随机
+              </a>
+            
+          </div>
+        
+
+        <figure data-type="image" tabindex="1">
+          <img src="/post-images/1624146622127.png" alt="" loading="lazy">     
+        </figure>
+
+
+        <div class="flex justify-between py-8">
+          
+            <div class="prev-post">
+              <a href="https://wzw.pub/thoughts-on-layer/">
+                <h3 class="post-title">
+                  <i class="ri-arrow-left-line"></i>
+                  对「层」的思考
+                </h3>
+              </a>
+            </div>
+          
+
+          
+            <div class="next-post">
+              <a href="https://wzw.pub/a-picture-is-worth-a-thousand-words/">
+                <h3 class="post-title">
+                  一图胜千言的思考
+                  <i class="ri-arrow-right-line"></i>
+                </h3>
+              </a>
+            </div>
+          
+        </div>
+
+        
+
+        <!-- 
+        <div id="vcomments"></div>
+        <script>
+            new Valine({
+                el: '#vcomments',
+                lang: 'zh-cn',
+                placeholder: '写下你的评论吧……',
+                max_nest: 3,
+                page_size: 5,
+                appId: 'hoEIjNWk6MKXf9NQe8b3K3mG-MdYXbMMI',
+                appKey: 'YO6weOeJtEEbNusByHW9cOWH',
+                master: '6c6323112bd931d166eebac2383154db'
+            })
+        </script>
+         -->
+
+      </div>
+    </div>
+
+    <script src="https://wzw.pub/media/prism.js"></script>  
+<script>
+
+Prism.highlightAll()
+let mainNavLinks = document.querySelectorAll(".markdownIt-TOC a");
+
+// This should probably be throttled.
+// Especially because it triggers during smooth scrolling.
+// https://lodash.com/docs/4.17.10#throttle
+// You could do like...
+// window.addEventListener("scroll", () => {
+//    _.throttle(doThatStuff, 100);
+// });
+// Only not doing it here to keep this Pen dependency-free.
+
+window.addEventListener("scroll", event => {
+  let fromTop = window.scrollY;
+
+  mainNavLinks.forEach((link, index) => {
+    let section = document.getElementById(decodeURI(link.hash).substring(1));
+    let nextSection = null
+    if (mainNavLinks[index + 1]) {
+      nextSection = document.getElementById(decodeURI(mainNavLinks[index + 1].hash).substring(1));
+    }
+    if (section.offsetTop <= fromTop) {
+      if (nextSection) {
+        if (nextSection.offsetTop > fromTop) {
+          link.classList.add("current");
+        } else {
+          link.classList.remove("current");    
+        }
+      } else {
+        link.classList.add("current");
+      }
+    } else {
+      link.classList.remove("current");
+    }
+  });
+});
+
+
+document.addEventListener("DOMContentLoaded", function() {
+  var lazyImages = [].slice.call(document.querySelectorAll(".post-feature-image.lazy"));
+
+  if ("IntersectionObserver" in window) {
+    let lazyImageObserver = new IntersectionObserver(function(entries, observer) {
+      entries.forEach(function(entry) {
+        if (entry.isIntersecting) {
+          let lazyImage = entry.target
+          lazyImage.style.backgroundImage = `url(${lazyImage.dataset.bg})`
+          lazyImage.classList.remove("lazy")
+          lazyImageObserver.unobserve(lazyImage)
+        }
+      });
+    });
+
+    lazyImages.forEach(function(lazyImage) {
+      lazyImageObserver.observe(lazyImage)
+    })
+  } else {
+    // Possibly fall back to a more compatible method here
+  }
+});
+
+const menuContainer = document.querySelector('.menu-container')
+const menus = document.querySelectorAll('.menu-container .menu')
+const mask = document.querySelector('.mask')
+const contentWrapper = document.querySelector('.content-wrapper')
+const latestArticle = document.querySelector('.latest-article')
+const readMore = document.querySelector('.read-more')
+const indexPage = document.querySelector('.index-page')
+
+const isHome = location.pathname === '/'
+if (latestArticle) {
+  latestArticle.style.display = isHome ? 'block' : 'none'
+  readMore.style.display = isHome ? 'block' : 'none'
+  indexPage.style.display = isHome ? 'none' : 'block'
+}
+
+const openMenu = () => {
+  menuContainer.classList.add('open')
+  menus.forEach(menu => {
+    menu.classList.add('animated', 'fadeInLeft')
+  })
+  mask.classList.add('open')
+  contentWrapper.classList.add('is-second')
+}
+
+const closeMenu = () => {
+  menuContainer.classList.remove('open')
+  menus.forEach(menu => {
+    menu.classList.remove('animated', 'fadeInLeft')
+  })
+  mask.classList.remove('open')
+  contentWrapper.classList.remove('is-second')
+}
+</script>
+  
+     <div class="site-info">
+      <div class="py-4 text-gray-700">© 2020 - <script>document.write(new Date().getFullYear())</script>
+Host by <a href="/about" class="rss" target="_blank">Tim</a> | <a class="rss" href="https://wzw.pub/atom.xml" target="_blank">订阅</a> </div>
+    </div>
+  </body>
+</html>

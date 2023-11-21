@@ -1,0 +1,390 @@
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>博弈与合作的进化 | 吴智炜</title>
+<meta name="description" content="吴智炜的随笔，关注心理学，经济学，哲学，数学，历史，政治，管理，投资，游戏设计和运营" />
+<meta name="keywords" content="吴智炜,心理学,经济学,数学,哲学,管理,投资,心智,思考,随笔,历史,政治">
+<link rel="shortcut icon" href="https://wzw.pub/favicon.ico?v=1">
+<link rel="stylesheet" href="/media/katex.min.css">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
+<link rel="stylesheet" href="/media/animate.min.css">
+
+<link rel="stylesheet" href="https://wzw.pub/styles/main.css">
+
+<script src="//instant.page/5.1.0" type="module" integrity="sha384-by67kQnR+pyfy8yWP4kPO12fHKRLHZPfEsiSXR8u2IKcTdxD805MGUXBzVPnkLHw"></script>
+<script type="text/javascript">
+  (function(c,l,a,r,i,t,y){
+      c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+      t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+      y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+  })(window, document, "clarity", "script", "jtitdcehs8");
+</script>
+
+
+    <!-- <script src='/media/Valine.min.js'></script> -->
+  </head>
+  <body>
+    <div id="app" class="main px-4 flex flex-col lg:flex-row">
+      <div id="sidebar" class="sidebar-wrapper lg:static lg:w-1/4">
+  <div class="lg:sticky top-0">
+    <div class="sidebar-content">
+      <div class="flex lg:block p-4 lg:px-0 items-center fixed lg:static lg:block top-0 right-0 left-0 bg-white z-50">
+        <!-- <i class="ri-menu-2-line lg:mt-4 text-2xl cursor-pointer animated fadeIn" onclick="openMenu()"></i> -->
+        
+        <a href="https://wzw.pub">
+        <h1 class="animated fadeInLeft lg:text-4xl font-extrabold lg:mt-8 mt-0 text-xl" style="animation-delay: 0.2s">吴智炜</h1>
+        </a>
+        <div class="top1block" style="margin-left: auto;">
+          
+            
+              <a href="https://www.douban.com/people/timcs/" _blank class="mr-4 text-xl text-gray-400 font-light hover:text-gray-900">
+                <i class="ri-douban-line"></i>
+              </a>
+            
+          
+            
+              <a href="/about"  class="mr-4 text-xl text-gray-400 font-light hover:text-gray-900">
+                <i class="ri-profile-line"></i>
+              </a>
+            
+          
+            
+              <a href="/archives"  class="mr-4 text-xl text-gray-400 font-light hover:text-gray-900">
+                <i class="ri-archive-line"></i>
+              </a>
+            
+          
+            
+              <a href="/atom.xml" _blank class="mr-4 text-xl text-gray-400 font-light hover:text-gray-900">
+                <i class="ri-rss-line"></i>
+              </a>
+            
+          
+        </div>
+      </div>
+      
+        <div class="animated fadeInLeft" style="animation-delay: 0.4s">
+          <p class="my-4 text-gray-600 font-light hidden lg:block">
+            文章目录
+          </p>
+          <div class="toc-container hidden lg:block">
+            <ul class="markdownIt-TOC">
+<li>
+<ul>
+<li><a href="#%E4%B8%8E%E6%8B%89%E4%BA%BA%E5%9B%A2%E4%BC%99%E7%9A%84%E5%8D%9A%E5%BC%88">与拉人团伙的博弈</a>
+<ul>
+<li><a href="#%E7%AC%AC%E4%B8%80%E5%9B%9E%E5%90%88">第一回合</a></li>
+<li><a href="#%E7%AC%AC%E4%BA%8C%E5%9B%9E%E5%90%88">第二回合</a></li>
+<li><a href="#%E7%AC%AC%E4%B8%89%E5%9B%9E%E5%90%88">第三回合</a></li>
+<li><a href="#%E7%AC%AC%E5%9B%9B%E5%9B%9E%E5%90%88">第四回合</a></li>
+<li><a href="#%E5%9D%87%E8%A1%A1">均衡</a></li>
+</ul>
+</li>
+<li><a href="#%E9%87%8D%E5%A4%8D%E5%9B%9A%E5%BE%92%E5%9B%B0%E5%A2%83">重复囚徒困境</a></li>
+<li><a href="#%E4%B8%80%E6%8A%A5%E8%BF%98%E4%B8%80%E6%8A%A5">一报还一报</a></li>
+<li><a href="#%E6%80%9D%E8%80%83">思考</a></li>
+</ul>
+</li>
+</ul>
+
+          </div>
+        </div>
+      
+    </div>
+  </div>
+</div>
+
+<div class="menu-container">
+  <i class="ri-arrow-left-line text-2xl cursor-pointer animated fadeIn close-menu-btn" onclick="closeMenu()"></i>
+  <div>
+    
+      
+        <a href="/" class="menu" style="animation-delay: 0s">
+          首页
+        </a>
+      
+    
+      
+        <a href="/about" class="menu" style="animation-delay: 0.2s">
+          关于
+        </a>
+      
+    
+      
+        <a href="/archives" class="menu" style="animation-delay: 0.4s">
+          归档
+        </a>
+      
+    
+  </div>
+  <div class="site-footer">
+    <div class="py-4 text-gray-700">© 2020 - <script>document.write(new Date().getFullYear())</script>
+Host by <a href="/about" class="rss" target="_blank">Tim</a></div>
+    <a class="rss" href="https://wzw.pub/atom.xml" target="_blank">RSS</a>
+  </div>
+</div>
+<div class="mask" onclick="closeMenu()">
+</div>
+      <div class="content-wrapper py-32 lg:p-8 lg:w-3/4 post-detail animated fadeIn">
+        <h1 class="text-3xl font-bold lg:mt-16">博弈与合作的进化</h1>
+        
+        <div class="text-sm text-gray-700 lg:my-8">
+          
+            2020-03-16
+          
+        </div>
+        
+        
+        <div class="post-content yue">
+          <p>从去年到现在，游戏经过了好几轮的线上测试，我深刻感受到了中国游戏运营环境之恶劣。</p>
+<!-- more -->
+<p>在中国做游戏，不光要死磕产品，提升品质，优化用户体验；还要<strong>与人斗</strong>，其中最难对付的是发广告拉人的团伙。</p>
+<p>他们自己不去平台投放广告，而是来游戏中发广告，拉走我们的玩家。这些玩家是看了我们投放在头条抖音等各平台的广告过来的，玩家能点击广告进来玩，说明了他是游戏的受众群体，即喜欢玩游戏。拉人团伙跟强盗一样，他们自己不去创造用户，反过来掠夺我们的用户，而且是经过了花费巨额广告筛选出来的用户。</p>
+<h2 id="与拉人团伙的博弈">与拉人团伙的博弈</h2>
+<p>与我在<a href="/why-bad/">「坏有没有存在的意义」</a>一文中提到的「资源商」不同，拉人团伙是真正的吸血鬼，与他们的博弈是一场你死我活的战争。</p>
+<h3 id="第一回合">第一回合</h3>
+<p>初次测试，拉人团伙在聊天频道直接发布广告，以10秒一次的速度刷屏，世界频道充斥着他们的广告，玩家不胜其烦。</p>
+<p>作为应对，我们紧急发布一个更新，提高了玩家可以发言的主堡等级，从3级提升到了10级，效果立显，顿时广告便停止了刷屏。</p>
+<p>然而，好景不长，由于前期升级主堡速度较快，所以等到他们达到主堡10级后，世界频道上又充斥着广告。我们不能继续提升发言的等级限制，否则就会使正常玩家的聊天需求被抑制。</p>
+<h3 id="第二回合">第二回合</h3>
+<p>没有办法，我们开始针对性的封号，甚至封IP。然而这项工作的成本较高，需要人力去实时监督和操作。</p>
+<p>另一方面，封号的作用很小，因为有按键精灵的存在，新建一个可以发言小号的成本很低。封IP也不能完全解决问题，聚集在一处的团伙可以开启代理，使IP发生变化。而且其对于分布在全国各地，散户接单发广告的模式也不管用。</p>
+<h3 id="第三回合">第三回合</h3>
+<p>我们随后便上线了后台自动化封禁，针对聊天或邮件等玩家产生的内容做程序审核，用正则表达式去匹配一些关键词，比如「加QQ群」，「加微信」等等。</p>
+<p>但是这样封禁的杀伤面可能过大，因为正常玩家也有线下建群的需求。玩家的线下群对SLG游戏非常重要，一个稳定的线下群能给线上的留存带来积极的作用。</p>
+<p>所以一方面，我们做了申诉功能，为正常玩家被误封提供了申诉途径；一方面针对玩家的充值不同额度定制不同的容忍度。比如，对没有充值的玩家容忍度最低，对充值较高的玩家容忍度则较高。因为拉人团伙很少会付费，否则他们拉人的金钱成本便会提高。</p>
+<p>这个功能上线后，聊天和邮件的广告拉人几乎消失殆尽，但代价是一些正常玩家可能会被误封，以及后续客服审核申诉的成本。</p>
+<h3 id="第四回合">第四回合</h3>
+<p>但是拉人并没有因此结束。我们游戏有个很重要的系统：联盟。一个联盟类似于现实世界里的组织，聚集着一群玩家。</p>
+<p>拉人团伙改变策略，建立起联盟，这种盟我们称之为「广告盟」。初期的广告盟与正常盟无异，与病毒的潜伏期一样。直到联盟人数达到上限，盟主会突然修改联盟公告，改为广告信息。并逐个去私聊盟里的成员，去其他联盟的外交留言板上留下广告信息。</p>
+<p>这个策略很有效，因为它初期比较隐蔽，不容易被我们注意到；第二就是盟主会以许诺提高成员在联盟的等级为诱饵，诱使初入盟的玩家加入所谓的线下群，然后在线下群里把玩家拉走。</p>
+<p>作为应对，我们一方面提高了建盟的成本，另一方面针对广告盟通常不管理，盟主战力不高等特异性修改了联盟推荐算法，使得广告盟的推荐排名不会太高。</p>
+<p>另一方面，我们对联盟公告和外交留言也做了自动化封禁，一旦玩家被封禁，其发布的公告会被重置，外交留言会被删除。</p>
+<h3 id="均衡">均衡</h3>
+<p>可以看到，我们采取的策略都是在<strong>提高</strong>拉人团伙在我们游戏中拉人的<strong>人力成本</strong>。而拉人团伙也在不断调整自己的策略，也<strong>提高了我们的运营成本</strong>。</p>
+<p>他们最新的一个策略让我不禁拍手叫绝：<img src="https://wzw.pub/post-images/1624112688234.png" alt="" loading="lazy"></p>
+<p>他发的单条信息可以完全没有违禁词，但是其让人加微信的意图却能传递出来。</p>
+<p>我们现在和拉人团伙保持着一个短暂的均衡状态，因为拉人团伙的成本已被拉高，在我们用户量没有爆炸增长前，其拉人的收益必然被压缩，从而转向其他游戏或者升级策略。而我们亦无法对其赶尽杀绝，因为这样势必会影响到绝大部分的正常玩家。</p>
+<p>就像免疫系统和病毒搏斗了千万年一样，我们和拉人团伙的策略都在不断进化着，就像一场无休止的军备竞赛。</p>
+<p>这是一场零和博弈，但双方都在成长，均衡会短暂存在，直到一方出现进化（病毒变异），从而打破平衡（疫情蔓延）。</p>
+<p>社会上并不都是零和博弈，还广泛存在类似游戏开发商和资源商间看似零和博弈，实则合作共赢的例子。那么合作是怎么产生的呢？</p>
+<h2 id="重复囚徒困境">重复囚徒困境</h2>
+<p>相信大家都对「囚徒困境」耳熟能详。</p>
+<figure data-type="image" tabindex="1"><img src="https://wzw.pub/post-images/1624112718414.png" alt="" loading="lazy"></figure>
+<p>两个嫌犯A和B，因为一起参与犯罪而被单独审问。如果A和B默契合作，都不揭发彼此，则他们会被各判1年；但是如果有人背叛，另外一个不背叛，则背叛的人会判无罪，而不背叛的人会被判10年；最后则是两个人都互相揭发，则各判7年。</p>
+<p>从个人角度考虑，不背叛的风险太高（判10年），所以为了规避风险，囚徒都会选择检举对方。但是如果每个囚徒都这么考虑的话，就会因为相互检举而坐实罪名，最后也会得到较重的惩罚。</p>
+<p>这好比社会上存在好人和坏人，坏人会利用好人的善良来为自己谋利；但是如果全社会都是坏人，这社会就会变得很糟糕，最后坏人也没法以此来谋利了。</p>
+<p>为什么大家不能都做个好人呢？</p>
+<p>因为<strong>资源是有限的</strong>，在有限的资源下，为了生存下去，必然会存在着各种各样的竞争策略。蚊子吸我的血是为了生存下去，这在蚊子的视角看来是吃饭般的天经地义；而蚊子吸我的血，则可能会让我起包甚至生病，所以我必须要消灭蚊子。</p>
+<p>为什么拉人团伙会存在？因为在游戏内拉人的成本比在平台打广告的成本低。我们怎么打击拉人团伙？不断地提高他们拉人的成本，直到他们放弃我们游戏为止。</p>
+<p>那为什么大家还会选择做个好人？大部分情况下都会选择合作而不是背叛呢？</p>
+<p>因为<strong>囚徒困境是一次性</strong>的，背叛者不需要考虑这次背叛后的代价。假设A因为背叛，被判无罪，但是刚放出来可能就会被B的马仔疯狂报复，其结局可能会比B更惨。</p>
+<p>现实生活中，博弈是反复进行的，类似于「重复囚徒困境」。假如进行一场比赛，每个选手都会有一种策略，比赛的每一轮会让所有选手两两参加囚徒困境的测试。哪种策略会胜出呢？</p>
+<h2 id="一报还一报">一报还一报</h2>
+<p>经济学等社会科学为什么会存在这么多争论？是因为其实验很困难，因为实验的样本是人。另一个原因就是实验很难精确的重复，因为很难找到一个完全一样的情境。<strong>实践是检验真理的唯一标准</strong>，如果连进行实验本身都很困难，那么确定一种学说的正确性就很困难。</p>
+<p>在「合作的进化」这本书中，作者在全世界范围内征集了上述重复囚徒困境比赛的参加选手，大家带着各种不同的策略来参赛。这场比赛是一次计算机程序模拟，其规避了社科实验的困难，让过程变得可以重复，也让结果变得可以量化。</p>
+<p>这些策略都比较有代表性，比如有老好人策略，永不背叛；也有坏人策略，一直背叛；还有一根筋策略，先合作，如果对方背叛则以后一直背叛；还有一种随机策略，随机决定本轮是否背叛；也有一种很贱的策略，即大部分情况下合作，偶尔背叛捅你一刀。</p>
+<p>获得最高分的策略是「一报还一报」，一开始它会选择合作，但如果对手上一轮背叛，下一轮它也会背叛；如果对手又合作，那么下一轮它会又合作。即先合作，下一轮的策略模仿对手上一轮的策略。</p>
+<p>这里力荐一个小游戏「信任的进化」，你可以直观的看到各种策略的演进过程，其过程非常有趣。</p>
+<figure data-type="image" tabindex="2"><img src="https://wzw.pub/post-images/1624112725338.png" alt="" loading="lazy"></figure>
+<p>一报还一报策略并不是对阵所有策略都能取得高分，相反，它会被某种策略压制的很惨，但社会上形形色色的人都有，综合所有策略的比拼，它的得分最高。</p>
+<p>这个策略有什么特点呢？</p>
+<p>一报还一报最开始是<strong>善良</strong>的，它不会选择一开始就背叛，而是先做个好人。</p>
+<p>一报还一报也是<strong>强硬</strong>的，一旦对方背叛，它会毫不犹豫的进行惩罚。</p>
+<p>一报还一报也是<strong>宽容</strong>的，只要对方选择合作，它会不计前嫌，继续选择合作。</p>
+<p>一报还一报还是<strong>简单</strong>的，它的模式简单明了，不像某些策略一样时不时背叛一下，也不像随机策略完全随机。</p>
+<p>但它也有自己的问题，因为人是会犯错的，世界存在各种不确定性。信息在传递的过程中可能会失真，人们在沟通中并不能100%传达自己的意思，对方也不一定100%理解你的意思。</p>
+<p>假设A和B都是一报还一报，一旦因为无心的错误，A传达了背叛的信号，则下一轮B也会背叛，下下轮由于B背叛，A也会继续背叛……这构成一个背叛的无限循环。</p>
+<p>所以有一种更加宽容的一报还一报策略被提了出来，即只有对方连续背叛两次才会背叛，即给了对方一次犯错的机会。在后续的比赛中，这种策略比单纯的一报还一报得分更高。</p>
+<p>如果引入遗传因素，将每一轮得分较低的策略淘汰，空出的位置分配给每一轮得分较高的策略，则到最后我们会发现，类似一报还一报的合作策略会生存到最后。这也是大自然的种种博弈最终会进化到合作的一种体现。</p>
+<h2 id="思考">思考</h2>
+<p>多年前读罢「合作的进化」这本书时，引发了我对人生观的一次思考，我应该成为什么样的人？</p>
+<p>做一个善良的，坚守原则的，对敌人和竞争对手强硬的人，而不是一个老好人。</p>
+<p>做一个简单且纯粹的人，而不是城府很深的人。</p>
+<p>做一个宽容的人，能包容一些无心的错误。这一点我可能做的不是很好，因为我的好胜心会影响我的情绪，从而对人会产生苛责，这也是我一直在修炼的。</p>
+<p>与大家共勉！</p>
+
+        </div>
+
+        
+          <div class="tag-container">
+            
+              <a href="https://wzw.pub/tag/lANazzijn/" class="tag">
+                进化
+              </a>
+            
+              <a href="https://wzw.pub/tag/FY-kkNJEsV/" class="tag">
+                做人
+              </a>
+            
+              <a href="https://wzw.pub/tag/YVnvvXES3P/" class="tag">
+                运营
+              </a>
+            
+              <a href="https://wzw.pub/tag/2JhdEplWjP/" class="tag">
+                囚徒困境
+              </a>
+            
+              <a href="https://wzw.pub/tag/JlnTLanhgH/" class="tag">
+                博弈论
+              </a>
+            
+          </div>
+        
+
+        <figure data-type="image" tabindex="1">
+          <img src="/post-images/1624146622127.png" alt="" loading="lazy">     
+        </figure>
+
+
+        <div class="flex justify-between py-8">
+          
+            <div class="prev-post">
+              <a href="https://wzw.pub/chaos-entropy-life-and-death/">
+                <h3 class="post-title">
+                  <i class="ri-arrow-left-line"></i>
+                  一坨大便的启示
+                </h3>
+              </a>
+            </div>
+          
+
+          
+            <div class="next-post">
+              <a href="https://wzw.pub/how-to-live-in-uncertain-world/">
+                <h3 class="post-title">
+                  如何在不确定性中生存并获益
+                  <i class="ri-arrow-right-line"></i>
+                </h3>
+              </a>
+            </div>
+          
+        </div>
+
+        
+
+        <!-- 
+        <div id="vcomments"></div>
+        <script>
+            new Valine({
+                el: '#vcomments',
+                lang: 'zh-cn',
+                placeholder: '写下你的评论吧……',
+                max_nest: 3,
+                page_size: 5,
+                appId: 'hoEIjNWk6MKXf9NQe8b3K3mG-MdYXbMMI',
+                appKey: 'YO6weOeJtEEbNusByHW9cOWH',
+                master: '6c6323112bd931d166eebac2383154db'
+            })
+        </script>
+         -->
+
+      </div>
+    </div>
+
+    <script src="https://wzw.pub/media/prism.js"></script>  
+<script>
+
+Prism.highlightAll()
+let mainNavLinks = document.querySelectorAll(".markdownIt-TOC a");
+
+// This should probably be throttled.
+// Especially because it triggers during smooth scrolling.
+// https://lodash.com/docs/4.17.10#throttle
+// You could do like...
+// window.addEventListener("scroll", () => {
+//    _.throttle(doThatStuff, 100);
+// });
+// Only not doing it here to keep this Pen dependency-free.
+
+window.addEventListener("scroll", event => {
+  let fromTop = window.scrollY;
+
+  mainNavLinks.forEach((link, index) => {
+    let section = document.getElementById(decodeURI(link.hash).substring(1));
+    let nextSection = null
+    if (mainNavLinks[index + 1]) {
+      nextSection = document.getElementById(decodeURI(mainNavLinks[index + 1].hash).substring(1));
+    }
+    if (section.offsetTop <= fromTop) {
+      if (nextSection) {
+        if (nextSection.offsetTop > fromTop) {
+          link.classList.add("current");
+        } else {
+          link.classList.remove("current");    
+        }
+      } else {
+        link.classList.add("current");
+      }
+    } else {
+      link.classList.remove("current");
+    }
+  });
+});
+
+
+document.addEventListener("DOMContentLoaded", function() {
+  var lazyImages = [].slice.call(document.querySelectorAll(".post-feature-image.lazy"));
+
+  if ("IntersectionObserver" in window) {
+    let lazyImageObserver = new IntersectionObserver(function(entries, observer) {
+      entries.forEach(function(entry) {
+        if (entry.isIntersecting) {
+          let lazyImage = entry.target
+          lazyImage.style.backgroundImage = `url(${lazyImage.dataset.bg})`
+          lazyImage.classList.remove("lazy")
+          lazyImageObserver.unobserve(lazyImage)
+        }
+      });
+    });
+
+    lazyImages.forEach(function(lazyImage) {
+      lazyImageObserver.observe(lazyImage)
+    })
+  } else {
+    // Possibly fall back to a more compatible method here
+  }
+});
+
+const menuContainer = document.querySelector('.menu-container')
+const menus = document.querySelectorAll('.menu-container .menu')
+const mask = document.querySelector('.mask')
+const contentWrapper = document.querySelector('.content-wrapper')
+const latestArticle = document.querySelector('.latest-article')
+const readMore = document.querySelector('.read-more')
+const indexPage = document.querySelector('.index-page')
+
+const isHome = location.pathname === '/'
+if (latestArticle) {
+  latestArticle.style.display = isHome ? 'block' : 'none'
+  readMore.style.display = isHome ? 'block' : 'none'
+  indexPage.style.display = isHome ? 'none' : 'block'
+}
+
+const openMenu = () => {
+  menuContainer.classList.add('open')
+  menus.forEach(menu => {
+    menu.classList.add('animated', 'fadeInLeft')
+  })
+  mask.classList.add('open')
+  contentWrapper.classList.add('is-second')
+}
+
+const closeMenu = () => {
+  menuContainer.classList.remove('open')
+  menus.forEach(menu => {
+    menu.classList.remove('animated', 'fadeInLeft')
+  })
+  mask.classList.remove('open')
+  contentWrapper.classList.remove('is-second')
+}
+</script>
+  
+     <div class="site-info">
+      <div class="py-4 text-gray-700">© 2020 - <script>document.write(new Date().getFullYear())</script>
+Host by <a href="/about" class="rss" target="_blank">Tim</a> | <a class="rss" href="https://wzw.pub/atom.xml" target="_blank">订阅</a> </div>
+    </div>
+  </body>
+</html>

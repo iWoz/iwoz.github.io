@@ -1,0 +1,365 @@
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>锚与决策 | 吴智炜</title>
+<meta name="description" content="吴智炜的随笔，关注心理学，经济学，哲学，数学，历史，政治，管理，投资，游戏设计和运营" />
+<meta name="keywords" content="吴智炜,心理学,经济学,数学,哲学,管理,投资,心智,思考,随笔,历史,政治">
+<link rel="shortcut icon" href="https://wzw.pub/favicon.ico?v=1">
+<link rel="stylesheet" href="/media/katex.min.css">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
+<link rel="stylesheet" href="/media/animate.min.css">
+
+<link rel="stylesheet" href="https://wzw.pub/styles/main.css">
+
+<script src="//instant.page/5.1.0" type="module" integrity="sha384-by67kQnR+pyfy8yWP4kPO12fHKRLHZPfEsiSXR8u2IKcTdxD805MGUXBzVPnkLHw"></script>
+<script type="text/javascript">
+  (function(c,l,a,r,i,t,y){
+      c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+      t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+      y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+  })(window, document, "clarity", "script", "jtitdcehs8");
+</script>
+
+
+    <!-- <script src='/media/Valine.min.js'></script> -->
+  </head>
+  <body>
+    <div id="app" class="main px-4 flex flex-col lg:flex-row">
+      <div id="sidebar" class="sidebar-wrapper lg:static lg:w-1/4">
+  <div class="lg:sticky top-0">
+    <div class="sidebar-content">
+      <div class="flex lg:block p-4 lg:px-0 items-center fixed lg:static lg:block top-0 right-0 left-0 bg-white z-50">
+        <!-- <i class="ri-menu-2-line lg:mt-4 text-2xl cursor-pointer animated fadeIn" onclick="openMenu()"></i> -->
+        
+        <a href="https://wzw.pub">
+        <h1 class="animated fadeInLeft lg:text-4xl font-extrabold lg:mt-8 mt-0 text-xl" style="animation-delay: 0.2s">吴智炜</h1>
+        </a>
+        <div class="top1block" style="margin-left: auto;">
+          
+            
+              <a href="https://www.douban.com/people/timcs/" _blank class="mr-4 text-xl text-gray-400 font-light hover:text-gray-900">
+                <i class="ri-douban-line"></i>
+              </a>
+            
+          
+            
+              <a href="/about"  class="mr-4 text-xl text-gray-400 font-light hover:text-gray-900">
+                <i class="ri-profile-line"></i>
+              </a>
+            
+          
+            
+              <a href="/archives"  class="mr-4 text-xl text-gray-400 font-light hover:text-gray-900">
+                <i class="ri-archive-line"></i>
+              </a>
+            
+          
+            
+              <a href="/atom.xml" _blank class="mr-4 text-xl text-gray-400 font-light hover:text-gray-900">
+                <i class="ri-rss-line"></i>
+              </a>
+            
+          
+        </div>
+      </div>
+      
+        <div class="animated fadeInLeft" style="animation-delay: 0.4s">
+          <p class="my-4 text-gray-600 font-light hidden lg:block">
+            文章目录
+          </p>
+          <div class="toc-container hidden lg:block">
+            <ul class="markdownIt-TOC">
+<li>
+<ul>
+<li><a href="#%E6%97%A0%E5%A4%84%E4%B8%8D%E5%9C%A8%E7%9A%84%E9%94%9A">无处不在的锚</a></li>
+<li><a href="#%E9%97%AE%E9%A2%98%E6%AF%94%E7%AD%94%E6%A1%88%E6%9B%B4%E9%87%8D%E8%A6%81">问题比答案更重要</a></li>
+<li><a href="#%E6%85%A2%E5%86%B3%E7%AD%96">慢决策</a></li>
+</ul>
+</li>
+</ul>
+
+          </div>
+        </div>
+      
+    </div>
+  </div>
+</div>
+
+<div class="menu-container">
+  <i class="ri-arrow-left-line text-2xl cursor-pointer animated fadeIn close-menu-btn" onclick="closeMenu()"></i>
+  <div>
+    
+      
+        <a href="/" class="menu" style="animation-delay: 0s">
+          首页
+        </a>
+      
+    
+      
+        <a href="/about" class="menu" style="animation-delay: 0.2s">
+          关于
+        </a>
+      
+    
+      
+        <a href="/archives" class="menu" style="animation-delay: 0.4s">
+          归档
+        </a>
+      
+    
+  </div>
+  <div class="site-footer">
+    <div class="py-4 text-gray-700">© 2020 - <script>document.write(new Date().getFullYear())</script>
+Host by <a href="/about" class="rss" target="_blank">Tim</a></div>
+    <a class="rss" href="https://wzw.pub/atom.xml" target="_blank">RSS</a>
+  </div>
+</div>
+<div class="mask" onclick="closeMenu()">
+</div>
+      <div class="content-wrapper py-32 lg:p-8 lg:w-3/4 post-detail animated fadeIn">
+        <h1 class="text-3xl font-bold lg:mt-16">锚与决策</h1>
+        
+        <div class="text-sm text-gray-700 lg:my-8">
+          
+            2021-06-13
+          
+        </div>
+        
+        
+        <div class="post-content yue">
+          <p>很多人也许从未见过真实的船锚。前段时间我去了一趟刘公岛，参观了甲午战争博物馆，见到了济远舰的铁锚。</p>
+<!-- more -->
+<figure data-type="image" tabindex="1"><img src="https://wzw.pub/post-images/1624114530300.jpeg" alt="" loading="lazy"></figure>
+<p>「锚」虽是日常生活不易见得之物，却在生活中无处不在，无时无刻不在影响着我们。</p>
+<h2 id="无处不在的锚">无处不在的锚</h2>
+<p>之所以说「锚」无处不在，是因为每个人在做决策时都会受到「锚定效应」的影响。</p>
+<p>上周跟朋友一起吃饭，谈笑间，我问G君：最近人民币在升值，你买的港股涨了多少？</p>
+<p>G君说：小米和腾讯都涨了一些，但是快手是400多入场的，现在才200多，半年跌了一半。</p>
+<p>我问他：快手都400多了，为啥还敢进场？</p>
+<p>他答道：当时是觉得快手还会涨，决定赚个几十块就撤，没想到现在反而跌了200多，现在只求能回本就好了。</p>
+<p>这就是锚定效应，G君当时是奔着投机赚钱的心态入场的，现在成本价反而变成他的锚，到了就要抛。</p>
+<blockquote>
+<p><strong>锚定效应</strong><br>
+人类在进行决策时，会过度偏重先前取得的资讯（这称为锚点），即使这个资讯与这项决定无关。在进行决策时，人类倾向于利用此片断资讯（锚点），快速做出决定。</p>
+</blockquote>
+<p>原本G君高位购入快手是期望赚一笔快钱就走，被套牢后，心态发生了变化，成本价变成了他心理上的锚点，影响着他后续的决策。</p>
+<p>最常见的锚定效应体现在商家惯用的打折促销手段：先标一个很高的到手价（原价），然后故意划掉，最后标出一个较低的折后价。</p>
+<figure data-type="image" tabindex="2"><img src="https://wzw.pub/post-images/1624114536377.png" alt="" loading="lazy"></figure>
+<p>这个划线的原价实际上就是故意喂给消费者的一个锚，让消费者<strong>觉得</strong>自己赚大了，有便宜可以捡，就会忍不住又剁了手。</p>
+<p>华为mate 40系列的定价策略，我认为也是一种锚定效应的体现。</p>
+<figure data-type="image" tabindex="3"><img src="https://wzw.pub/post-images/1624114540816.png" alt="" loading="lazy"></figure>
+<p>可以看出华为想主推Mate40 Pro系列，然而6000+的定价对于安卓手机来说并不算便宜，为了增加其销量，华为特意推出了Pro+。</p>
+<p>可以看出Pro+的存在大概率是为了设一个锚，因为其本身的销量非常惨淡。但有了它8500元的定价，就可以显得Pro一下子便宜了很多。</p>
+<p>而Mate40的保时捷设计售价更是高达1万。为了让这个价格显得合理，华为特意锚定了保时捷这样的豪车品牌，让用户觉得这就是一个奢侈品设计，自然也就能接受上万的价格。如果继续沿用Pro+的命名，叫Pro++或Pro X，相信销量有可能会比Pro+更加惨淡。</p>
+<p>周末，Q君来我家做客，特意带了几个燕窝果来。孤陋寡闻的我从没听说过燕窝果，上网查后发现这就是一种火龙果。吃起来口感跟普通火龙果差不多，但是价格比普通火龙果贵了八倍。</p>
+<p>我笑道，这商家很鬼啊，故意用燕窝这种名贵食材设锚，让这种黄色外皮的火龙果多卖了八倍的价格。如果只算营养价值和培育成本的话，估计能贵一倍就差不多了。</p>
+<p>锚定效应的例子在生活中还有很多，大家如果稍加观察便能发现：锚真的是无处不在。</p>
+<h2 id="问题比答案更重要">问题比答案更重要</h2>
+<p>人们之所以这么容易受锚定效应的影响，是因为人的决策需要在一定框架内进行展开。锚点就像是一个圆心，围绕圆心画一个圆，这个圆便是人的决策圈。</p>
+<p>问题比答案更重要，是因为问题是锚，锚定了后面答案的范围。如果问错了问题，哪怕再正确的答案也是徒然，因为第一步就错了。</p>
+<p>我之前写过一篇文章：如何提升解决问题的能力，开篇先提到了必要性，即在解决问题之前，我们需要先确认问题是否需要被解决；之后才是论述解决问题的具体方法。</p>
+<p>如果一个人要去造永动机，他相当于问了一个问题：如何才能把永动机造出来。如果他没有去质疑这个问题，而是直接去行动了，那么花费他一生的时间都无法达到他的目的。</p>
+<p>因为他问了一个错误的问题，永动机违反了热力学定律，不可能造得出来。</p>
+<p>两年前，我们游戏被提出了一个问题：RTS的战斗玩法，在SLG的沙盘上，怎么样才能大量的消耗士兵？</p>
+<p>为什么提出这个问题，是因为在当时成熟的沙盘框架里，士兵是一个重度付费点。士兵的不断消耗就意味着玩家需要不断地造兵，而造兵的大量消耗我们可以通过卖道具的方式提供给玩家，从而为我们产生一大笔营收。</p>
+<p>为了解决这个问题，我们最终选择了将沙盘战斗做成「合兵」，在保留RTS战斗的框架下砍掉了复杂的英雄技能，同时又在副本保留了原先可以放技能的RTS战斗。最终导致沙盘的战斗难懂且无趣，副本战斗的英雄技能又变成了鸡肋，从而逐渐丧失游戏的一大特色。</p>
+<p>问题的提出可能很快，但解决问题的过程可能会很慢。</p>
+<p>如果问错了一个问题，解答的过程就是代价。答案会被问题所锚定，导致作答的人忘了抬头再去审视原先的问题，而错误的问题就会导致时间和精力的浪费。</p>
+<h2 id="慢决策">慢决策</h2>
+<p>我们之所以会被士兵消耗问题所锚定，是因为我们当时并不知道还有第二条路可以走。</p>
+<p>一个人如果不知道热力学定律，他就不知道永动机无法被造出来。</p>
+<p>亦或者你已经是一个网购达人，早就熟知了商家先涨价再打折的套路，自然也就会对价格锚无动于衷。</p>
+<p>所以，在做决策前，如果能搜集到足够多的相关信息，有助于做出更好的决策。</p>
+<p>一个月前，新项目全面启动，定下了「双快」的基调，即研发快 + 运行快。</p>
+<p>没多久，特效同学就找开发来制定一个新的特效规范，其中就牵扯到了在战斗中是使用A方案还是B方案的问题。简言之，A方案表现效果好，但是性能较差；B方案表现效果一般，但是性能较好。</p>
+<p>我们新项目的战斗还是会有几百个士兵同屏，所以对于士兵特效大家意见一致，选B。而对英雄的特效却产生了不同的意见，因为英雄比较少，但是技能较多，所以要怎么选呢？</p>
+<p>我的意见是现在先不做决定，因为真实的战斗场景还没有，真实的播放器代码也没有，等到场景和代码差不多了之后再对两个方案进行测试，到时再根据实际效果去做选择会更为准确。</p>
+<p>在等待的途中，我们可以把已经确定的特效方案先做了，这样也不会耽误特效工作。如果我们早早就决定了所有方案，那么它就会变成我们的一个锚，而这个锚很可能反应的不是实际情况。</p>
+<p>对于重要的事情，决策要慢，越是重大的决策越需要审慎的去考察，搜集足够多的意见和信息，从而避免过快的锚定到某一个次优解上。</p>
+<p>如果大脑对此进行高强度的持续思考，在等待的时间里，潜意识也会继续思考，辅助意识层面进行决策。</p>
+<p>决策要慢，但是行动一定要快。一旦做了决定，就要坚决迅速地执行。</p>
+<p>因为时机随时在变化，信息存在时效性。</p>
+<p>如果因为行动缓慢导致时机发生变化，之前依赖的信息过期失效，那么执行决策本身反而就会是一种错误。正所谓迟则生变，夜长梦多。</p>
+<p>如果行动过程被某种因素拖慢了，就要果断调整计划，重新审视问题，以避免被已经生锈的锚所锚定。</p>
+<p>知易行难，与大家共勉！</p>
+
+        </div>
+
+        
+          <div class="tag-container">
+            
+              <a href="https://wzw.pub/tag/xltglra4v/" class="tag">
+                定价
+              </a>
+            
+              <a href="https://wzw.pub/tag/8VNq3Ygx3r/" class="tag">
+                心理学
+              </a>
+            
+              <a href="https://wzw.pub/tag/JPXwkWguo/" class="tag">
+                锚定效应
+              </a>
+            
+              <a href="https://wzw.pub/tag/wUTAm-xxu1/" class="tag">
+                决策
+              </a>
+            
+          </div>
+        
+
+        <figure data-type="image" tabindex="1">
+          <img src="/post-images/1624146622127.png" alt="" loading="lazy">     
+        </figure>
+
+
+        <div class="flex justify-between py-8">
+          
+            <div class="prev-post">
+              <a href="https://wzw.pub/is-game-have-future/">
+                <h3 class="post-title">
+                  <i class="ri-arrow-left-line"></i>
+                  做游戏还有未来吗？
+                </h3>
+              </a>
+            </div>
+          
+
+          
+            <div class="next-post">
+              <a href="https://wzw.pub/the-road-forward/">
+                <h3 class="post-title">
+                  未来的路
+                  <i class="ri-arrow-right-line"></i>
+                </h3>
+              </a>
+            </div>
+          
+        </div>
+
+        
+
+        <!-- 
+        <div id="vcomments"></div>
+        <script>
+            new Valine({
+                el: '#vcomments',
+                lang: 'zh-cn',
+                placeholder: '写下你的评论吧……',
+                max_nest: 3,
+                page_size: 5,
+                appId: 'hoEIjNWk6MKXf9NQe8b3K3mG-MdYXbMMI',
+                appKey: 'YO6weOeJtEEbNusByHW9cOWH',
+                master: '6c6323112bd931d166eebac2383154db'
+            })
+        </script>
+         -->
+
+      </div>
+    </div>
+
+    <script src="https://wzw.pub/media/prism.js"></script>  
+<script>
+
+Prism.highlightAll()
+let mainNavLinks = document.querySelectorAll(".markdownIt-TOC a");
+
+// This should probably be throttled.
+// Especially because it triggers during smooth scrolling.
+// https://lodash.com/docs/4.17.10#throttle
+// You could do like...
+// window.addEventListener("scroll", () => {
+//    _.throttle(doThatStuff, 100);
+// });
+// Only not doing it here to keep this Pen dependency-free.
+
+window.addEventListener("scroll", event => {
+  let fromTop = window.scrollY;
+
+  mainNavLinks.forEach((link, index) => {
+    let section = document.getElementById(decodeURI(link.hash).substring(1));
+    let nextSection = null
+    if (mainNavLinks[index + 1]) {
+      nextSection = document.getElementById(decodeURI(mainNavLinks[index + 1].hash).substring(1));
+    }
+    if (section.offsetTop <= fromTop) {
+      if (nextSection) {
+        if (nextSection.offsetTop > fromTop) {
+          link.classList.add("current");
+        } else {
+          link.classList.remove("current");    
+        }
+      } else {
+        link.classList.add("current");
+      }
+    } else {
+      link.classList.remove("current");
+    }
+  });
+});
+
+
+document.addEventListener("DOMContentLoaded", function() {
+  var lazyImages = [].slice.call(document.querySelectorAll(".post-feature-image.lazy"));
+
+  if ("IntersectionObserver" in window) {
+    let lazyImageObserver = new IntersectionObserver(function(entries, observer) {
+      entries.forEach(function(entry) {
+        if (entry.isIntersecting) {
+          let lazyImage = entry.target
+          lazyImage.style.backgroundImage = `url(${lazyImage.dataset.bg})`
+          lazyImage.classList.remove("lazy")
+          lazyImageObserver.unobserve(lazyImage)
+        }
+      });
+    });
+
+    lazyImages.forEach(function(lazyImage) {
+      lazyImageObserver.observe(lazyImage)
+    })
+  } else {
+    // Possibly fall back to a more compatible method here
+  }
+});
+
+const menuContainer = document.querySelector('.menu-container')
+const menus = document.querySelectorAll('.menu-container .menu')
+const mask = document.querySelector('.mask')
+const contentWrapper = document.querySelector('.content-wrapper')
+const latestArticle = document.querySelector('.latest-article')
+const readMore = document.querySelector('.read-more')
+const indexPage = document.querySelector('.index-page')
+
+const isHome = location.pathname === '/'
+if (latestArticle) {
+  latestArticle.style.display = isHome ? 'block' : 'none'
+  readMore.style.display = isHome ? 'block' : 'none'
+  indexPage.style.display = isHome ? 'none' : 'block'
+}
+
+const openMenu = () => {
+  menuContainer.classList.add('open')
+  menus.forEach(menu => {
+    menu.classList.add('animated', 'fadeInLeft')
+  })
+  mask.classList.add('open')
+  contentWrapper.classList.add('is-second')
+}
+
+const closeMenu = () => {
+  menuContainer.classList.remove('open')
+  menus.forEach(menu => {
+    menu.classList.remove('animated', 'fadeInLeft')
+  })
+  mask.classList.remove('open')
+  contentWrapper.classList.remove('is-second')
+}
+</script>
+  
+     <div class="site-info">
+      <div class="py-4 text-gray-700">© 2020 - <script>document.write(new Date().getFullYear())</script>
+Host by <a href="/about" class="rss" target="_blank">Tim</a> | <a class="rss" href="https://wzw.pub/atom.xml" target="_blank">订阅</a> </div>
+    </div>
+  </body>
+</html>

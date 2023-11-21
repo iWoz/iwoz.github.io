@@ -1,0 +1,371 @@
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>一个概率问题引发的思考 | 吴智炜</title>
+<meta name="description" content="吴智炜的随笔，关注心理学，经济学，哲学，数学，历史，政治，管理，投资，游戏设计和运营" />
+<meta name="keywords" content="吴智炜,心理学,经济学,数学,哲学,管理,投资,心智,思考,随笔,历史,政治">
+<link rel="shortcut icon" href="https://wzw.pub/favicon.ico?v=1">
+<link rel="stylesheet" href="/media/katex.min.css">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
+<link rel="stylesheet" href="/media/animate.min.css">
+
+<link rel="stylesheet" href="https://wzw.pub/styles/main.css">
+
+<script src="//instant.page/5.1.0" type="module" integrity="sha384-by67kQnR+pyfy8yWP4kPO12fHKRLHZPfEsiSXR8u2IKcTdxD805MGUXBzVPnkLHw"></script>
+<script type="text/javascript">
+  (function(c,l,a,r,i,t,y){
+      c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+      t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+      y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+  })(window, document, "clarity", "script", "jtitdcehs8");
+</script>
+
+
+    <!-- <script src='/media/Valine.min.js'></script> -->
+  </head>
+  <body>
+    <div id="app" class="main px-4 flex flex-col lg:flex-row">
+      <div id="sidebar" class="sidebar-wrapper lg:static lg:w-1/4">
+  <div class="lg:sticky top-0">
+    <div class="sidebar-content">
+      <div class="flex lg:block p-4 lg:px-0 items-center fixed lg:static lg:block top-0 right-0 left-0 bg-white z-50">
+        <!-- <i class="ri-menu-2-line lg:mt-4 text-2xl cursor-pointer animated fadeIn" onclick="openMenu()"></i> -->
+        
+        <a href="https://wzw.pub">
+        <h1 class="animated fadeInLeft lg:text-4xl font-extrabold lg:mt-8 mt-0 text-xl" style="animation-delay: 0.2s">吴智炜</h1>
+        </a>
+        <div class="top1block" style="margin-left: auto;">
+          
+            
+              <a href="https://www.douban.com/people/timcs/" _blank class="mr-4 text-xl text-gray-400 font-light hover:text-gray-900">
+                <i class="ri-douban-line"></i>
+              </a>
+            
+          
+            
+              <a href="/about"  class="mr-4 text-xl text-gray-400 font-light hover:text-gray-900">
+                <i class="ri-profile-line"></i>
+              </a>
+            
+          
+            
+              <a href="/archives"  class="mr-4 text-xl text-gray-400 font-light hover:text-gray-900">
+                <i class="ri-archive-line"></i>
+              </a>
+            
+          
+            
+              <a href="/atom.xml" _blank class="mr-4 text-xl text-gray-400 font-light hover:text-gray-900">
+                <i class="ri-rss-line"></i>
+              </a>
+            
+          
+        </div>
+      </div>
+      
+        <div class="animated fadeInLeft" style="animation-delay: 0.4s">
+          <p class="my-4 text-gray-600 font-light hidden lg:block">
+            文章目录
+          </p>
+          <div class="toc-container hidden lg:block">
+            <ul class="markdownIt-TOC">
+<li>
+<ul>
+<li><a href="#%E8%AF%A5%E6%8D%A2%E5%90%97">该换吗</a></li>
+<li><a href="#%E4%B8%BA%E4%BB%80%E4%B9%88">为什么</a></li>
+<li><a href="#%E5%8F%8D%E7%9B%B4%E8%A7%89">反直觉</a></li>
+<li><a href="#%E6%80%9D%E8%80%83">思考</a></li>
+</ul>
+</li>
+</ul>
+
+          </div>
+        </div>
+      
+    </div>
+  </div>
+</div>
+
+<div class="menu-container">
+  <i class="ri-arrow-left-line text-2xl cursor-pointer animated fadeIn close-menu-btn" onclick="closeMenu()"></i>
+  <div>
+    
+      
+        <a href="/" class="menu" style="animation-delay: 0s">
+          首页
+        </a>
+      
+    
+      
+        <a href="/about" class="menu" style="animation-delay: 0.2s">
+          关于
+        </a>
+      
+    
+      
+        <a href="/archives" class="menu" style="animation-delay: 0.4s">
+          归档
+        </a>
+      
+    
+  </div>
+  <div class="site-footer">
+    <div class="py-4 text-gray-700">© 2020 - <script>document.write(new Date().getFullYear())</script>
+Host by <a href="/about" class="rss" target="_blank">Tim</a></div>
+    <a class="rss" href="https://wzw.pub/atom.xml" target="_blank">RSS</a>
+  </div>
+</div>
+<div class="mask" onclick="closeMenu()">
+</div>
+      <div class="content-wrapper py-32 lg:p-8 lg:w-3/4 post-detail animated fadeIn">
+        <h1 class="text-3xl font-bold lg:mt-16">一个概率问题引发的思考</h1>
+        
+        <div class="text-sm text-gray-700 lg:my-8">
+          
+            2020-06-07
+          
+        </div>
+        
+        
+        <div class="post-content yue">
+          <p>假设你参加一个抽奖活动，现场有三扇关闭的门，只有一扇门的后面有车。</p>
+<!-- more -->
+<p>主持人让你选择一扇门打开，如果门后面是车的话，你将会获得这辆车；否则你将空手而归。</p>
+<p>你选了其中一扇门。</p>
+<p>然后，主持人打开了剩下两扇门中的一扇，这扇门后没有车。这时，主持人告诉你，你可以改变主意，选择另一扇还关闭的门。</p>
+<p>你会改变主意吗？</p>
+<h2 id="该换吗">该换吗</h2>
+<p>这个问题叫「三门问题」，来自于美国的一档真实电视节目，主持人叫蒙提霍尔，所以这个问题也叫「蒙提霍尔问题」。</p>
+<figure data-type="image" tabindex="1"><img src="https://wzw.pub/post-images/1624551763001.jpeg" alt="" loading="lazy"></figure>
+<p>当初看到这个问题的时候，我的直觉告诉我，换不换有什么区别吗？</p>
+<p>因为在排除掉一扇空门后，这就变成一个简单的二选一问题。每扇门的都有一半的几率打开是车，换与不换得到车的几率是一样的。</p>
+<p>所以，身为一个懒人，我选择不换。</p>
+<p>然而正确答案是：换！</p>
+<h2 id="为什么">为什么</h2>
+<p>一开始，你选择到车的概率是1/3，选到空门的概率是2/3。</p>
+<p>如果你一开始选定的是车，这时候你换门就必定会换到空门，也就是说最后选到空门概率是1/3。</p>
+<p>如果你一开始选定的是空门，因为第二扇空门已经打开了，所以剩下的门后一定是车。这时候你换门就必定会换到车，也就是说最后选到车的概率是2/3。</p>
+<p>2/3 &gt; 1/3，所以你应该换。</p>
+<p>有人会说：我还是觉得换不换没啥区别，因为换或不换相当于在于两扇门里选一扇，跟之前的选择应该没有关系才对。</p>
+<p>如果现场有一千扇门，你最开始选择了一扇门，假设它的编号是777。然后主持人把剩下的998扇门全部打开，它们无一例外都是空门，只留了编号为235的门依然关闭着。</p>
+<p>也是二选一，你要不要从777号门换到235号门？</p>
+<p>你一开始挑选了一扇有极大概率(99.9%)是空门的777号门，然后主持人费劲千辛万苦帮你打开了998扇空门。这时候，你还会相信你原来的选的777号门和主持人刻意留下的235号门，它们后面有车的概率是对半分吗？</p>
+<p>这时候直觉会告诉你，235号门后肯定有车，你非得选它不可。因为你知道一开始的选择就是瞎蒙的，蒙对的几率很小，再继续坚持下去已经没有任何必要了。</p>
+<h2 id="反直觉">反直觉</h2>
+<p>我承认，答案非常的反直觉，我甚至用代码实证了换比不换要好。</p>
+<p>为什么主持人打开了一扇空门，便会对另外一扇门后有车的概率有影响呢？</p>
+<p>关键在于主持人不是随机的打开剩下门中的一扇门，而是经过精心挑选，打开了一定是空门的那扇门。</p>
+<p>打开一扇空门这件事情并没有对我们当初的决定产生丝毫影响，我们如果坚持当初的选择，获得车的概率还是为1/3。</p>
+<p>但是它使得另外一扇关着门后有车的概率提升了。</p>
+<p>想象你没有选择的两扇门是一个整体，这两扇门后有车的概率加起来是2/3。当打开一扇空门后，这扇门后有车的概率就彻底变成0了，而另外一扇关着门的概率就提升到了2/3。</p>
+<p>有人会说，节目一开始哪个门后面有车就已经被确定下来了，为什么换门能提高概率呢？</p>
+<p>那是因为对于单独的一次来说，无论怎样，车在哪扇门后面早已被确定下来了。对于你来说，选择的结果不是1/3和2/3，而是0和1。选对了就是1，选错了就是0。</p>
+<p>然而当你一次又一次的面对这个问题时，根据大数定律，换门能得到车的次数最后就会比不换的次数多两倍。</p>
+<p>所以你也应该相信，当你第一次面对这个问题的时候，让命运在1/3和2/3里掷骰子，换门会让你拿到车的可能性变得更高一些。</p>
+<p>如果你读过我写的<a href="/how-to-face-fear/">「如何科学的应对恐惧」</a>或<a href="/how-to-solve-problem/">「如何提升解决问题的能力」</a>，你会发现主持人打开一扇空门实际上是<strong>提供了一个线索</strong>。这个线索让整个贝叶斯推断的空间范围被缩小了，它让原来两扇门有车的概率坍缩到了一扇门上。</p>
+<h2 id="思考">思考</h2>
+<p>为什么大多数人都会倾向于不换呢？</p>
+<p>因为改变是有成本的。</p>
+<p>人一旦做出一个决定，或者做出一个承诺，就会倾向于维护它。因为在人类社会上言行一致是一种美德，而言行不一则会被别人看不起。</p>
+<p>在「影响力」这本书里提到<strong>承诺和一致</strong>是一个强大的武器，当一个人选择了一种立场，他便会产生维持它的动机，因为这样能显得前后一致。</p>
+<p>所以要使一个人维护一个立场或规则，就要使这个人站出来对这个立场或规则进行<strong>公开表态并作出承诺</strong>。由于已经公开，在一致性的约束下，这个人大概率会信守承诺。</p>
+<p>另外一点便是，一旦人们做出一个选择，人们就会坚信自己选对了。</p>
+<p>想象你去赌球，下注前，你犹豫不决；然而一旦你押注了一只球队，你对它获胜的信心立刻就会大增。</p>
+<p>看起来很阿Q，其实这是一种自我保护机制。因为思考的过程很痛苦，所以一旦下了决定，往往就会认为万事大吉了，可以喘口气了。</p>
+<p>王兴说过一句话：多数人为了逃避真正的思考，愿意做任何事情。</p>
+<p>对一个问题进行深度思考需要搜集大量信息作为原材料，花费大量精力去甄别和筛选噪音，然后融会贯通所学的知识，面对最终的不确定性，运用科学的推断去做决定。</p>
+<p>我曾经跟一个专门从事博彩套利的朋友聊过。绝大部分赌球的人，都是基于自己的信念下注，他们不会去计算赔率，不会去分析两只球队的实力、状态和新闻，仅仅凭自己的喜好，押注于一个单一的结果。</p>
+<p>而套利者会去研究分析新闻，摸索出真实的球队状态和实力，根据赔率和凯利公式进行分散下注。只要赌局的次数够多，最终他们会战胜其他人，获得不菲的利益。</p>
+<p>所以一旦我们做了一个决定，根据承诺一致原则，我们会自觉维护这个决定并很少再进行思考。如果这个决定不是经过深度思考做出的，它们便有可能是错误的决定。在一致性的心理作用下，我们会倾向于坚持这个错误的决定，并不断地给自己心理暗示这是对的。</p>
+<p>坚持不一定是对的，在错误的道路上坚持越久，会越加深错误的程度，最后会导致积重难返，一错到底。这样的坚持，还不如半途而废。</p>
+<p>做事情应该先定好目标，然后根据反馈不断地进行调整，每一次的反馈就像贝叶斯推断的一个线索，能剔除错误的选择，而调整则是要增大目标成功的几率。</p>
+<p>我认为真正值得鼓励的坚持是，经过认真思考后，确定一个目标。<strong>坚持的应该是目标，而不是一个达到目标的具体方法</strong>。毕竟条条大路通罗马，到达目标才是坚持的意义所在。</p>
+
+        </div>
+
+        
+          <div class="tag-container">
+            
+              <a href="https://wzw.pub/tag/YyLfuYqJQ/" class="tag">
+                心智
+              </a>
+            
+              <a href="https://wzw.pub/tag/8VNq3Ygx3r/" class="tag">
+                心理学
+              </a>
+            
+              <a href="https://wzw.pub/tag/aRLeFrN2g/" class="tag">
+                思考
+              </a>
+            
+              <a href="https://wzw.pub/tag/eOZJALLU5/" class="tag">
+                三门问题
+              </a>
+            
+              <a href="https://wzw.pub/tag/0o-6BbcLMj/" class="tag">
+                概率
+              </a>
+            
+              <a href="https://wzw.pub/tag/wUTAm-xxu1/" class="tag">
+                决策
+              </a>
+            
+          </div>
+        
+
+        <figure data-type="image" tabindex="1">
+          <img src="/post-images/1624146622127.png" alt="" loading="lazy">     
+        </figure>
+
+
+        <div class="flex justify-between py-8">
+          
+            <div class="prev-post">
+              <a href="https://wzw.pub/comparative-advantages/">
+                <h3 class="post-title">
+                  <i class="ri-arrow-left-line"></i>
+                  从「比较优势」说开去
+                </h3>
+              </a>
+            </div>
+          
+
+          
+            <div class="next-post">
+              <a href="https://wzw.pub/how-to-solve-problem/">
+                <h3 class="post-title">
+                  如何提升解决问题的能力
+                  <i class="ri-arrow-right-line"></i>
+                </h3>
+              </a>
+            </div>
+          
+        </div>
+
+        
+
+        <!-- 
+        <div id="vcomments"></div>
+        <script>
+            new Valine({
+                el: '#vcomments',
+                lang: 'zh-cn',
+                placeholder: '写下你的评论吧……',
+                max_nest: 3,
+                page_size: 5,
+                appId: 'hoEIjNWk6MKXf9NQe8b3K3mG-MdYXbMMI',
+                appKey: 'YO6weOeJtEEbNusByHW9cOWH',
+                master: '6c6323112bd931d166eebac2383154db'
+            })
+        </script>
+         -->
+
+      </div>
+    </div>
+
+    <script src="https://wzw.pub/media/prism.js"></script>  
+<script>
+
+Prism.highlightAll()
+let mainNavLinks = document.querySelectorAll(".markdownIt-TOC a");
+
+// This should probably be throttled.
+// Especially because it triggers during smooth scrolling.
+// https://lodash.com/docs/4.17.10#throttle
+// You could do like...
+// window.addEventListener("scroll", () => {
+//    _.throttle(doThatStuff, 100);
+// });
+// Only not doing it here to keep this Pen dependency-free.
+
+window.addEventListener("scroll", event => {
+  let fromTop = window.scrollY;
+
+  mainNavLinks.forEach((link, index) => {
+    let section = document.getElementById(decodeURI(link.hash).substring(1));
+    let nextSection = null
+    if (mainNavLinks[index + 1]) {
+      nextSection = document.getElementById(decodeURI(mainNavLinks[index + 1].hash).substring(1));
+    }
+    if (section.offsetTop <= fromTop) {
+      if (nextSection) {
+        if (nextSection.offsetTop > fromTop) {
+          link.classList.add("current");
+        } else {
+          link.classList.remove("current");    
+        }
+      } else {
+        link.classList.add("current");
+      }
+    } else {
+      link.classList.remove("current");
+    }
+  });
+});
+
+
+document.addEventListener("DOMContentLoaded", function() {
+  var lazyImages = [].slice.call(document.querySelectorAll(".post-feature-image.lazy"));
+
+  if ("IntersectionObserver" in window) {
+    let lazyImageObserver = new IntersectionObserver(function(entries, observer) {
+      entries.forEach(function(entry) {
+        if (entry.isIntersecting) {
+          let lazyImage = entry.target
+          lazyImage.style.backgroundImage = `url(${lazyImage.dataset.bg})`
+          lazyImage.classList.remove("lazy")
+          lazyImageObserver.unobserve(lazyImage)
+        }
+      });
+    });
+
+    lazyImages.forEach(function(lazyImage) {
+      lazyImageObserver.observe(lazyImage)
+    })
+  } else {
+    // Possibly fall back to a more compatible method here
+  }
+});
+
+const menuContainer = document.querySelector('.menu-container')
+const menus = document.querySelectorAll('.menu-container .menu')
+const mask = document.querySelector('.mask')
+const contentWrapper = document.querySelector('.content-wrapper')
+const latestArticle = document.querySelector('.latest-article')
+const readMore = document.querySelector('.read-more')
+const indexPage = document.querySelector('.index-page')
+
+const isHome = location.pathname === '/'
+if (latestArticle) {
+  latestArticle.style.display = isHome ? 'block' : 'none'
+  readMore.style.display = isHome ? 'block' : 'none'
+  indexPage.style.display = isHome ? 'none' : 'block'
+}
+
+const openMenu = () => {
+  menuContainer.classList.add('open')
+  menus.forEach(menu => {
+    menu.classList.add('animated', 'fadeInLeft')
+  })
+  mask.classList.add('open')
+  contentWrapper.classList.add('is-second')
+}
+
+const closeMenu = () => {
+  menuContainer.classList.remove('open')
+  menus.forEach(menu => {
+    menu.classList.remove('animated', 'fadeInLeft')
+  })
+  mask.classList.remove('open')
+  contentWrapper.classList.remove('is-second')
+}
+</script>
+  
+     <div class="site-info">
+      <div class="py-4 text-gray-700">© 2020 - <script>document.write(new Date().getFullYear())</script>
+Host by <a href="/about" class="rss" target="_blank">Tim</a> | <a class="rss" href="https://wzw.pub/atom.xml" target="_blank">订阅</a> </div>
+    </div>
+  </body>
+</html>

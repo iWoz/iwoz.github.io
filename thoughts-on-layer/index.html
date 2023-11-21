@@ -1,0 +1,401 @@
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>对「层」的思考 | 吴智炜</title>
+<meta name="description" content="吴智炜的随笔，关注心理学，经济学，哲学，数学，历史，政治，管理，投资，游戏设计和运营" />
+<meta name="keywords" content="吴智炜,心理学,经济学,数学,哲学,管理,投资,心智,思考,随笔,历史,政治">
+<link rel="shortcut icon" href="https://wzw.pub/favicon.ico?v=1">
+<link rel="stylesheet" href="/media/katex.min.css">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
+<link rel="stylesheet" href="/media/animate.min.css">
+
+<link rel="stylesheet" href="https://wzw.pub/styles/main.css">
+
+<script src="//instant.page/5.1.0" type="module" integrity="sha384-by67kQnR+pyfy8yWP4kPO12fHKRLHZPfEsiSXR8u2IKcTdxD805MGUXBzVPnkLHw"></script>
+<script type="text/javascript">
+  (function(c,l,a,r,i,t,y){
+      c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+      t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+      y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+  })(window, document, "clarity", "script", "jtitdcehs8");
+</script>
+
+
+    <!-- <script src='/media/Valine.min.js'></script> -->
+  </head>
+  <body>
+    <div id="app" class="main px-4 flex flex-col lg:flex-row">
+      <div id="sidebar" class="sidebar-wrapper lg:static lg:w-1/4">
+  <div class="lg:sticky top-0">
+    <div class="sidebar-content">
+      <div class="flex lg:block p-4 lg:px-0 items-center fixed lg:static lg:block top-0 right-0 left-0 bg-white z-50">
+        <!-- <i class="ri-menu-2-line lg:mt-4 text-2xl cursor-pointer animated fadeIn" onclick="openMenu()"></i> -->
+        
+        <a href="https://wzw.pub">
+        <h1 class="animated fadeInLeft lg:text-4xl font-extrabold lg:mt-8 mt-0 text-xl" style="animation-delay: 0.2s">吴智炜</h1>
+        </a>
+        <div class="top1block" style="margin-left: auto;">
+          
+            
+              <a href="https://www.douban.com/people/timcs/" _blank class="mr-4 text-xl text-gray-400 font-light hover:text-gray-900">
+                <i class="ri-douban-line"></i>
+              </a>
+            
+          
+            
+              <a href="/about"  class="mr-4 text-xl text-gray-400 font-light hover:text-gray-900">
+                <i class="ri-profile-line"></i>
+              </a>
+            
+          
+            
+              <a href="/archives"  class="mr-4 text-xl text-gray-400 font-light hover:text-gray-900">
+                <i class="ri-archive-line"></i>
+              </a>
+            
+          
+            
+              <a href="/atom.xml" _blank class="mr-4 text-xl text-gray-400 font-light hover:text-gray-900">
+                <i class="ri-rss-line"></i>
+              </a>
+            
+          
+        </div>
+      </div>
+      
+        <div class="animated fadeInLeft" style="animation-delay: 0.4s">
+          <p class="my-4 text-gray-600 font-light hidden lg:block">
+            文章目录
+          </p>
+          <div class="toc-container hidden lg:block">
+            <ul class="markdownIt-TOC">
+<li>
+<ul>
+<li><a href="#%E5%AF%BC%E8%88%AA">导航</a></li>
+<li><a href="#%E7%BB%84%E7%BB%87%E6%9E%B6%E6%9E%84">组织架构</a></li>
+<li><a href="#%E6%89%81%E5%B9%B3%E5%8C%96-vs-%E5%88%86%E5%B1%82">扁平化 vs 分层</a></li>
+</ul>
+</li>
+</ul>
+
+          </div>
+        </div>
+      
+    </div>
+  </div>
+</div>
+
+<div class="menu-container">
+  <i class="ri-arrow-left-line text-2xl cursor-pointer animated fadeIn close-menu-btn" onclick="closeMenu()"></i>
+  <div>
+    
+      
+        <a href="/" class="menu" style="animation-delay: 0s">
+          首页
+        </a>
+      
+    
+      
+        <a href="/about" class="menu" style="animation-delay: 0.2s">
+          关于
+        </a>
+      
+    
+      
+        <a href="/archives" class="menu" style="animation-delay: 0.4s">
+          归档
+        </a>
+      
+    
+  </div>
+  <div class="site-footer">
+    <div class="py-4 text-gray-700">© 2020 - <script>document.write(new Date().getFullYear())</script>
+Host by <a href="/about" class="rss" target="_blank">Tim</a></div>
+    <a class="rss" href="https://wzw.pub/atom.xml" target="_blank">RSS</a>
+  </div>
+</div>
+<div class="mask" onclick="closeMenu()">
+</div>
+      <div class="content-wrapper py-32 lg:p-8 lg:w-3/4 post-detail animated fadeIn">
+        <h1 class="text-3xl font-bold lg:mt-16">对「层」的思考</h1>
+        
+        <div class="text-sm text-gray-700 lg:my-8">
+          
+            2020-11-15
+          
+        </div>
+        
+        
+        <div class="post-content yue">
+          <p>最近，父亲在老家建了一座三层楼的房子，从此在老家有了个根据地。由于时间紧张，三楼还没有装修，但这已不妨碍我们入住体验了。</p>
+<!-- more -->
+<p>如果未来的房子可以用3D打印机打印出来，有两种打印方式：从左到右打印和从下到上打印。你认为哪种方式更好？</p>
+<figure data-type="image" tabindex="1"><img src="https://wzw.pub/post-images/1624114168883.png" alt="" loading="lazy"></figure>
+<p>如果让我来选，我还是会选从下到上一层层打印。因为假设打印机中途发生故障了，我还是有可能住进完整的第一层；而不是一个四面漏风的房子中。</p>
+<p>在软件开发，这种思路叫做<strong>解耦</strong>。房子的每一层都是解耦的，每一层都可以独立提供一个较为完整的居住体验。从左到右的打印，则把每一层耦合到了一起，除非全部打印完，否则是没法住人的。</p>
+<p>房子可以住人，在软件开发中就如同产品可以<strong>交付</strong>给用户使用。如果将产品也划分为一层一层进行分层构建，就可以进行持续交付。用户每过一段时间便能体验到新的功能，然后根据用户的反馈进行下一轮的调整，这便是当下流行的敏捷开发思想。</p>
+<h2 id="导航">导航</h2>
+<p>从深圳骑行到北京，怎么能以<strong>最快响应速度</strong>给出一条可行的路线？</p>
+<p>在游戏开发中，这是一个经典的寻路问题。以应用最为广泛的AStar寻路为例，其寻路的时间跟整个路径上要搜索的网格数成正相关。</p>
+<figure data-type="image" tabindex="2"><img src="https://wzw.pub/post-images/1624114175744.png" alt="" loading="lazy"></figure>
+<p>如果以街区类比网格，从深圳骑行到北京，粗略估算要途径上万个街区。这样寻路的时间会变得非常漫长（<em>百度地图甚至无法给出骑行路线</em>），用户难以接受这么慢的响应时间。</p>
+<p>有没有一个办法可以<strong>立刻</strong>给出一条可行路线呢？</p>
+<p>答案是<strong>分层寻路</strong>。</p>
+<p>我们可以以简单的行政区划进行分层：省，市，县，乡和街道。</p>
+<figure data-type="image" tabindex="3"><img src="https://wzw.pub/post-images/1624542047187.png" alt="" loading="lazy"></figure>
+<p>首先，在省这一层，我们可以规划出，从广东到北京需要途径哪些省份。中国只有34个省级行政区，所以这一层最多要处理34个网格。</p>
+<p>接着在广东省内，我们可以规划出，从深圳到下一个省需要途径哪些市。广东省有21个地级市，所以这一层最多要处理21个网格。</p>
+<p>接着在深圳市内，我们可以规划出，从我们这个区到下一个市要途径哪些区。深圳市有10个区，所以这一层只需要处理10个网格。</p>
+<p>我在南山区，可以规划出从我住的街道到下一个区要途径哪些街道。南山区共有8个街道，所以这一层只需要处理8个网格。</p>
+<p>……</p>
+<p>进行分层后，每一层要处理的网格数便降低到一个非常低的量级，这样每一层都可以非常快速的给出答案，最后的时间正比于层数<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mo>×</mo></mrow><annotation encoding="application/x-tex">\times</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.66666em;vertical-align:-0.08333em;"></span><span class="mord">×</span></span></span></span>层的网格数，远低于总的网格数，所以总耗时将大大降低。</p>
+<p>当然，有人会问了，我并没有给出其他省份和市区的内部路线；但是实际上这些路线可以放到后续进行进一步计算，不耽误你立即出发。</p>
+<p>分层寻路能快速求解的本质在于每一层的添加都<strong>降低了整个问题的复杂度</strong>。</p>
+<p>复杂度是软件工程师的大敌，一个好的工程师可以管理并驾驭复杂度，使得软件容易维护；而一个差的工程师则容易因管理不好复杂度而失去对代码的控制，要么bug丛生，要么难以维护。</p>
+<h2 id="组织架构">组织架构</h2>
+<p>一个集团军通常有5-10万人，假设你是一个集团军司令，请问你该如何去指挥这10万人呢？</p>
+<p>你的精力有限，你无法去指挥每一个人的行动。因为根据邓巴数，每个人通常只能与150个人维持比较紧密的关系，这个数字受到人类大脑皮质的限制。</p>
+<p>作为一个司令，你指挥不过来每一个人，也无需去指挥每一个人。</p>
+<ul>
+<li>你手下大概会有5个师或旅，你对这些师长或旅长们发号施令；</li>
+<li>一个师或旅下面会有4个团，他们负责指挥这些团长；</li>
+<li>一个团下面大概会有4个营，团长负责指挥这些营长；</li>
+<li>一个营下面又有4个连；一个连下面又有4个排；</li>
+<li>一个排下面大致有3个班，一个班里有10个人，而班长则负责指挥这10个人进行具体作战任务。</li>
+</ul>
+<p>通过分层，每一个长官需要直接管理的下属会少于10个，大大降低了指挥的复杂度。</p>
+<p>军队的层级是一个典型的金字塔结构，越高职位的人越少，越低职位的人越多。这与当今的绝大多数组织的架构一致。</p>
+<figure data-type="image" tabindex="4"><img src="https://wzw.pub/post-images/1624114315254.png" alt="" loading="lazy"></figure>
+<p>然而现在却有一种「扁平化」的趋势盛行于高科技互联网公司，这又是为什么呢？</p>
+<p><strong>凡事都有双面性，有利也就有弊</strong>。</p>
+<p>层的划分，可以使每一层解耦，降低了管理的复杂度；但是同时引入了沟通的问题。</p>
+<p>每一层的沟通都是有代价的，信息在每一层中传递都会伴随着损耗。这些损耗可能是上层表达的含糊不清，中层的误读曲解，抑或是下层没有理解到位。</p>
+<p>这有可能是致命的，层数越多，最上层的信息传到底层时被扭曲的可能性就越大，而基层的真实情况则很难传达到最上层。</p>
+<p>提倡扁平化的原因，就在于通过把层数的缩减，使得沟通的损耗降到最低，从而使高层的战略意图能够更快更准的得到执行，基层的意见和情况能直接传达到高层，为决策提供辅助。</p>
+<p>解放军在某些时期也实行过一段时间的「扁平化」。1965年开始，解放军取消了军衔制，这种情况一直延续了20余年，最终又恢复了军衔制。</p>
+<p>为什么取消了又恢复呢？因为在对越反击战中，军队的建制经常容易打散重建，当一个师长和一个团长都被重建到一支队伍中时，由于他们两可能互相不认识，这时候能唯一快速明确指挥关系的就是军衔。军衔低的服从军衔高的，这是一条简单明了的规则。取消了军衔制后，由于大家都没有了军衔，所以这一简单的规则被打破了，导致了打散重建时的指挥混乱。</p>
+<p>从这里我们能再一次看出硬币的两面：绝对的扁平化既不利于管理，也不利于沟通。</p>
+<h2 id="扁平化-vs-分层">扁平化 vs 分层</h2>
+<p>引入了层，可以降低管理复杂度，解耦并促进分工，提高效率；另一面，则提升了沟通复杂度，降低了沟通效率，使信息损耗变大。</p>
+<p>分层或扁平化？这是一个问题。</p>
+<p>有两种解决办法：</p>
+<ol>
+<li>严格分层，用其他方法保证信息传达高效且准确</li>
+<li>适当扁平化，通过基层自我管理降低管理复杂度</li>
+</ol>
+<p>前者的一种代表就是<strong>军事化管理</strong>。严格强调纪律，下级无条件服从上级，令行禁止，确保命令能够自上而下得到执行。</p>
+<p>军队从古至今就一直遵守着这种模式。军人的天职就是服从，军纪严明，军法严厉。用纪律这一点来确保命令可以得到彻底的执行，信息从上传递到下的路径非常高效。</p>
+<p>现如今，也有许多企业和学校甚至传销组织采用半军事化管理，实际上就是通过严苛的纪律来规范信息的传达高效且准确。而且作为补充，频繁的洗脑也是一种强化信息传达的手段。</p>
+<p>这种方法的问题在于，基层变成了执行机器，丧失了部分自由和人权，而且容易压力过大，内心会比较压抑。</p>
+<p>后者则是精简层级，适当扁平化。但这样不可避免的引入了管理复杂度，对应的解决办法是使基层进行自我管理，从而降低管理复杂度。</p>
+<p>自我管理要求组织成员有较强的能力和自驱力，能够进行自我管理，从而可以减少上层的监管。</p>
+<p>有两种办法可以让成员自我管理，一种是通过招聘和考核进行筛选；还有一种是培训学习，提升成员能力。创业公司没有太多时间用于培训新员工，所以初创团队成员的自我管理能力就显得非常重要。</p>
+<p>我们可以看到，在劳动密集型的企业，比如富士康，就会采用半军事化管理的策略。因为生产线上的工人可能素质没有那么高，自驱力也没有那么强，需要设立纷繁的规则来进行管理。</p>
+<p>而在硅谷的高科技企业，比如Facebook，则提倡扁平化管理。因为其招聘标准较为严格，招来的人基本都是高手，而技术人也不喜欢受到太多的管制和约束。</p>
+<figure data-type="image" tabindex="5"><img src="https://wzw.pub/post-images/1624114222554.png" alt="" loading="lazy"></figure>
+<blockquote>
+<p><strong>康威定律</strong>：设计系统的架构受制于产生这些设计的组织的沟通结构</p>
+</blockquote>
+<p>可以看到，不同的组织架构，具备不同的沟通方式。是分层设计还是追求扁平化，不能一概而论。应该结合组织的实际情况来判别。</p>
+<p>假如组织上是脑力密集型，则应该追求适当扁平化，放权给基层，让基层形成自驱；如果组织是劳动密集型，则需要通过层级去减少管理复杂度，通过纪律和规范来使信息高效传达。</p>
+<p>分层的思想本质是一个分解问题的思想，一个大问题，通过分层进行解耦，从而让复杂度可控。这是一把思想的利剑，可以劈开很多看似复杂的问题。</p>
+<blockquote>
+<p><strong>锤子定律</strong>：如果你有的只是一个锤子，那么所有的东西看起来都像一个钉子</p>
+</blockquote>
+<p>当然，我们也应避免锤子思想，痴迷于用分层去解决所有问题。该如何用好「层」这把武器？我想爱因斯坦已经给出了答案：</p>
+<blockquote>
+<p>事情应该力求简单，不过不能过于简单。</p>
+</blockquote>
+
+        </div>
+
+        
+          <div class="tag-container">
+            
+              <a href="https://wzw.pub/tag/nV5_LwmUH/" class="tag">
+                寻路算法
+              </a>
+            
+              <a href="https://wzw.pub/tag/PPuaZI1Jxd/" class="tag">
+                复杂度
+              </a>
+            
+              <a href="https://wzw.pub/tag/YyLfuYqJQ/" class="tag">
+                心智
+              </a>
+            
+              <a href="https://wzw.pub/tag/aRLeFrN2g/" class="tag">
+                思考
+              </a>
+            
+              <a href="https://wzw.pub/tag/pLys84TpT/" class="tag">
+                效率
+              </a>
+            
+              <a href="https://wzw.pub/tag/hxG7O8Iez/" class="tag">
+                层
+              </a>
+            
+              <a href="https://wzw.pub/tag/dtmNy3Curt/" class="tag">
+                组织架构
+              </a>
+            
+          </div>
+        
+
+        <figure data-type="image" tabindex="1">
+          <img src="/post-images/1624146622127.png" alt="" loading="lazy">     
+        </figure>
+
+
+        <div class="flex justify-between py-8">
+          
+            <div class="prev-post">
+              <a href="https://wzw.pub/the-road-forward/">
+                <h3 class="post-title">
+                  <i class="ri-arrow-left-line"></i>
+                  未来的路
+                </h3>
+              </a>
+            </div>
+          
+
+          
+            <div class="next-post">
+              <a href="https://wzw.pub/rediction-good-and-bad/">
+                <h3 class="post-title">
+                  预测，好与坏
+                  <i class="ri-arrow-right-line"></i>
+                </h3>
+              </a>
+            </div>
+          
+        </div>
+
+        
+
+        <!-- 
+        <div id="vcomments"></div>
+        <script>
+            new Valine({
+                el: '#vcomments',
+                lang: 'zh-cn',
+                placeholder: '写下你的评论吧……',
+                max_nest: 3,
+                page_size: 5,
+                appId: 'hoEIjNWk6MKXf9NQe8b3K3mG-MdYXbMMI',
+                appKey: 'YO6weOeJtEEbNusByHW9cOWH',
+                master: '6c6323112bd931d166eebac2383154db'
+            })
+        </script>
+         -->
+
+      </div>
+    </div>
+
+    <script src="https://wzw.pub/media/prism.js"></script>  
+<script>
+
+Prism.highlightAll()
+let mainNavLinks = document.querySelectorAll(".markdownIt-TOC a");
+
+// This should probably be throttled.
+// Especially because it triggers during smooth scrolling.
+// https://lodash.com/docs/4.17.10#throttle
+// You could do like...
+// window.addEventListener("scroll", () => {
+//    _.throttle(doThatStuff, 100);
+// });
+// Only not doing it here to keep this Pen dependency-free.
+
+window.addEventListener("scroll", event => {
+  let fromTop = window.scrollY;
+
+  mainNavLinks.forEach((link, index) => {
+    let section = document.getElementById(decodeURI(link.hash).substring(1));
+    let nextSection = null
+    if (mainNavLinks[index + 1]) {
+      nextSection = document.getElementById(decodeURI(mainNavLinks[index + 1].hash).substring(1));
+    }
+    if (section.offsetTop <= fromTop) {
+      if (nextSection) {
+        if (nextSection.offsetTop > fromTop) {
+          link.classList.add("current");
+        } else {
+          link.classList.remove("current");    
+        }
+      } else {
+        link.classList.add("current");
+      }
+    } else {
+      link.classList.remove("current");
+    }
+  });
+});
+
+
+document.addEventListener("DOMContentLoaded", function() {
+  var lazyImages = [].slice.call(document.querySelectorAll(".post-feature-image.lazy"));
+
+  if ("IntersectionObserver" in window) {
+    let lazyImageObserver = new IntersectionObserver(function(entries, observer) {
+      entries.forEach(function(entry) {
+        if (entry.isIntersecting) {
+          let lazyImage = entry.target
+          lazyImage.style.backgroundImage = `url(${lazyImage.dataset.bg})`
+          lazyImage.classList.remove("lazy")
+          lazyImageObserver.unobserve(lazyImage)
+        }
+      });
+    });
+
+    lazyImages.forEach(function(lazyImage) {
+      lazyImageObserver.observe(lazyImage)
+    })
+  } else {
+    // Possibly fall back to a more compatible method here
+  }
+});
+
+const menuContainer = document.querySelector('.menu-container')
+const menus = document.querySelectorAll('.menu-container .menu')
+const mask = document.querySelector('.mask')
+const contentWrapper = document.querySelector('.content-wrapper')
+const latestArticle = document.querySelector('.latest-article')
+const readMore = document.querySelector('.read-more')
+const indexPage = document.querySelector('.index-page')
+
+const isHome = location.pathname === '/'
+if (latestArticle) {
+  latestArticle.style.display = isHome ? 'block' : 'none'
+  readMore.style.display = isHome ? 'block' : 'none'
+  indexPage.style.display = isHome ? 'none' : 'block'
+}
+
+const openMenu = () => {
+  menuContainer.classList.add('open')
+  menus.forEach(menu => {
+    menu.classList.add('animated', 'fadeInLeft')
+  })
+  mask.classList.add('open')
+  contentWrapper.classList.add('is-second')
+}
+
+const closeMenu = () => {
+  menuContainer.classList.remove('open')
+  menus.forEach(menu => {
+    menu.classList.remove('animated', 'fadeInLeft')
+  })
+  mask.classList.remove('open')
+  contentWrapper.classList.remove('is-second')
+}
+</script>
+  
+     <div class="site-info">
+      <div class="py-4 text-gray-700">© 2020 - <script>document.write(new Date().getFullYear())</script>
+Host by <a href="/about" class="rss" target="_blank">Tim</a> | <a class="rss" href="https://wzw.pub/atom.xml" target="_blank">订阅</a> </div>
+    </div>
+  </body>
+</html>
